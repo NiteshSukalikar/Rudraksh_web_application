@@ -3,16 +3,7 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false,
-
-  //API
-  baseUrlApi : 'http://localhost:55115/',
-  baseAuthApi: 'https://localhost:44348/',
-  baseUserApi: 'https://localhost:44360/',
-  baseStudyApi: 'https://localhost:44307/',
-  // Encryption And Decryption Key:
-  AESencryptionKey: '123456$#@$^@1ERF',
-  AESencryptionIV: '123456$#@$^@1ERF',
+  production: false
 };
 
 /*

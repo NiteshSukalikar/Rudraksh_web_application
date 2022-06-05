@@ -1,10 +1,11 @@
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 
 @Injectable({
   providedIn: 'root',
 })
 export class CommonService {
-  constructor() { }
+  constructor(private http:HttpClient) { }
 
     getFormatedDate(date: any){
       const d = new Date(date);
@@ -15,4 +16,6 @@ export class CommonService {
       if (day.length < 2) day = '0' + day;
       return [year, month, day].join('-');
     }
+
+  
 }

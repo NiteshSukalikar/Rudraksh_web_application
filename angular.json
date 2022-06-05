@@ -6,7 +6,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "curie-frontend": {
+    "Rudralife": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:application": {
@@ -20,7 +20,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/curie-frontend",
+            "outputPath": "dist/Rudralife",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -79,10 +79,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "curie-frontend:build:production"
+              "browserTarget": "Rudralife:build:production"
             },
             "development": {
-              "browserTarget": "curie-frontend:build:development"
+              "browserTarget": "Rudralife:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -90,7 +90,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "curie-frontend:build"
+            "browserTarget": "Rudralife:build"
           }
         },
         "test": {
@@ -119,5 +119,5 @@
       "style": "scss"
     }
   },
-  "defaultProject": "curie-frontend"
+  "defaultProject": "Rudralife"
 }

@@ -5,21 +5,27 @@ const appRoutes: Routes = [
   {
     path: '',
     pathMatch: 'full',
-    redirectTo: '/auth/sign-in',
+    redirectTo: '/home/main',
   },
   {
-    path: 'auth',
+    path: 'home',
     loadChildren: () =>
-      import('./pages/auth/auth.module').then((m) => m.AuthModule),
+      import('./pages/home/user.module').then((m) => m.UserModule),
   },
   {
     path: '**',
-    redirectTo: '/auth/sign-in',
+    redirectTo: '/home/main',
   },
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(appRoutes, { enableTracing: true })],
-  exports: [RouterModule]
+  imports: [
+    RouterModule.forRoot(appRoutes, {
+      enableTracing: true,
+      useHash: true,
+      scrollPositionRestoration: 'enabled',
+    }),
+  ],
+  exports: [RouterModule],
 })
 export class AppRoutingModule {}

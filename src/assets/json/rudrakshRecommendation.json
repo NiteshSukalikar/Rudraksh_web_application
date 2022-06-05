@@ -1,0 +1,148 @@
+[
+    {
+        "number": "1",
+        "Recommendations":[
+            {
+                "name": "1 Mukhi",
+                "imagePath" : "1 Mukhi.jpg"
+            },
+            {
+                "name": "12 Mukhi",
+                "imagePath" : "12 Mukhi.jpg"
+            },
+            {
+                "name": "19 Mukhi",
+                "imagePath" : "19 Mukhi.jpg"
+            }
+        ]
+    },
+     {
+        "number": "2",
+        "Recommendations":[
+            {
+                "name": "2 Mukhi",
+                "imagePath" : "1 Mukhi.jpg"
+            },
+            {
+                "name": "GauriShankar",
+                "imagePath" : "12 Mukhi.jpg"
+            },
+            {
+                "name": "20 Mukhi",
+                "imagePath" : "20 Mukhi.jpg"
+            }
+        ]
+    },
+    {
+        "number": "3",
+        "Recommendations":[
+            {
+                "name": "5 Mukhi",
+                "imagePath" : "5 Mukhi.jpg"
+            },
+            {
+                "name": "15 Mukhi",
+                "imagePath" : "15 Mukhi.jpg"
+            }
+        ]
+    },
+    {
+        "number": "4",
+        "Recommendations":[
+            {
+                "name": "8 Mukhi",
+                "imagePath" : "8 Mukhi.jpg"
+            },
+            {
+                "name": "10 Mukhi",
+                "imagePath" : "10 Mukhi.jpg"
+            },
+            {
+                "name": "16 Mukhi",
+                "imagePath" : "16 Mukhi.jpg"
+            }
+        ]
+    },
+    {
+        "number": "5",
+        "Recommendations":[
+            {
+                "name": "4 Mukhi",
+                "imagePath" : "4 Mukhi.jpg"
+            },
+            {
+                "name": "10 Mukhi",
+                "imagePath" : "10 Mukhi.jpg"
+            }
+        ]
+    },
+    {
+        "number": "6",
+        "Recommendations":[
+            {
+                "name": "2 Mukhi",
+                "imagePath" : "1 Mukhi.jpg"
+            },
+            {
+                "name": "GauriShankar",
+                "imagePath" : "12 Mukhi.jpg"
+            },
+            {
+                "name": "19 Mukhi",
+                "imagePath" : "19 Mukhi.jpg"
+            }
+        ]
+    },
+    {
+        "number": "7",
+        "Recommendations":[
+            {
+                "name": "9 Mukhi",
+                "imagePath" : "9 Mukhi.jpg"
+            },
+            {
+                "name": "10 Mukhi",
+                "imagePath" : "10 Mukhi.jpg"
+            }
+        ]
+    },
+    {
+        "number": "8",
+        "Recommendations":[
+            {
+                "name": "7 Mukhi",
+                "imagePath" : "7 Mukhi.jpg"
+            },
+            {
+                "name": "14 Mukhi.jpg",
+                "imagePath" : "14 Mukhi.jpg"
+            },
+            {
+                "name": "17 Mukhi",
+                "imagePath" : "17 Mukhi.jpg"
+            }
+        ]
+    },
+    {
+        "number": "9",
+        "Recommendations":[
+            {
+                "name": "3 Mukhi",
+                "imagePath" : "3 Mukhi.jpg"
+            },
+            {
+                "name": "11 Mukhi",
+                "imagePath" : "11 Mukhi.jpg"
+            },
+            {
+                "name": "14 Mukhi",
+                "imagePath" : "14 Mukhi.jpg"
+            },
+            {
+                "name": "18 Mukhi",
+                "imagePath" : "18 Mukhi.jpg"
+            }
+        ]
+    }
+
+]

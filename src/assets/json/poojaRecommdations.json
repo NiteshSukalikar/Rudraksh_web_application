@@ -1,0 +1,215 @@
+[
+  {
+    "number": 1,
+    "RulingPlanet": "Surya / Sun",
+    "Deity": "Shri Aditya/ Shri Ram/ Shri Narayan",
+    "RecommendedPujas": [
+      {
+        "name": "Surya Graha Shanti Puja",
+        "imagePath" : "1 - 900  600 px Surya Grah Shaanti Puja.JPG"
+      },
+      {
+        "name": "Gayatri Mantra Japa",
+        "imagePath" : "2 - 900  600 pxGayatri Mantra Japa.JPG"
+      },
+      {
+        "name": "Ram Raksha Stotra Paath",
+        "imagePath" : "3 - 900  600 px  Ram Raksha Stotra Paath.JPG"
+      },
+      {
+        "name": "Shri Ram Anugrah Puja",
+        "imagePath" : "4 - 900 x 600 px - Shri Ram Anugrah.JPG"
+      },
+      {
+        "name": "Satya Narayan Puja",
+        "imagePath" : "5 - 900 x 600 px - Sri Satya Narayan Puja.JPG"
+      }
+    ],
+    "mahaPooja": "Akhand Ramayan Paath",
+    "imagePath" : "6 - 900 x 600 px - akhand ramayan path - puja_s 1.JPG"
+  },
+  {
+    "number": 2,
+    "RulingPlanet": "Chandra / Moon",
+    "Deity": "Ashutosh Shiv",
+    "RecommendedPujas": [
+      {
+        "name": "Chandra Graha Shanti Puja",
+        "imagePath" : "7 - 900  x 600 px  Chandra Grah Shanti Puja Planets.JPG"
+      },
+      {
+        "name": "Ardhanareeshwar Puja",
+        "imagePath" : "8 - 900 x 600 pxArdhnareeshwar puja.JPG"
+      },
+      {
+        "name": "Shadang Rudrabhishek",
+        "imagePath" : "9 - 900 x 600 px Shadang Rudrabhishek.JPG"
+      },
+      {
+        "name": "Laghu Rudri Maha Anusthaan",
+        "imagePath" : "10 - 900 x 600 pxLaghu Rudrabhishek  puja.JPG"
+      }
+    ],
+    "mahaPooja": "Maha Rudrabhishek",
+    "imagePath" : "11 - 900 x 600 px Maha Rudrabhishek.JPG"
+  },
+  {
+    "number": 3,
+    "RulingPlanet": "Guru / Jupiter",
+    "Deity": "Shri Vishnu",
+    "RecommendedPujas": [
+      {
+        "name": "Guru Graha Shanti Puja",
+        "imagePath" : "12 - 900  x 600 px Guru  Graha Shaanti Puja.JPG"
+      },
+      {
+        "name": "Santan Gopal Puja",
+        "imagePath" : "13 - 900 x 600 px Santan Gopal Puja.JPG"
+      },
+      {
+        "name": "Vishnu Sahastranaam",
+        "imagePath" : "14 - 900 x 600 px - Vishnu Sahastranaam ,.JPG"
+      },
+      {
+        "name": "Maha Sudarshan Puja",
+        "imagePath" : "15 - 900 x 600 px - Maha Sudarshan Puja.jpg"
+      }
+    ],
+    "mahaPooja": "Shrimad Bhagwad Katha Mool Paath Parayan",
+    "imagePath" : "16 - 900 x 600 px - Srimad bhagwat katha mool Paath.JPG"
+  },
+  {
+    "number": 4,
+    "RulingPlanet": "Rahu",
+    "Deity": "Shri Ganesh",
+    "RecommendedPujas": [
+      {
+        "name": " Rahu Graha Shanti Puja",
+        "imagePath" : "17 - 900 x 600 px Rahu Grah Shaanti Puja.JPG"
+      },
+      {
+        "name": "Ganesh Lakshmi Puja",
+        "imagePath" : "18 - 900 x 600 px  Ganesh Lakshmi Puja.JPG"
+      },
+      {
+        "name": "Ganesh Puja",
+        "imagePath" : "19 - 900 x 600 px Ganesh Puja.JPG"
+      },
+      {
+        "name": " Ganesh Durvarchan",
+        "imagePath" : "20 - 900 x 600 px  Ganesh Durvarchan.jpg"
+      }
+    ],
+    "mahaPooja": "Not Required",
+    "imagePath" : ""
+  },
+  {
+    "number": 5,
+    "RulingPlanet": "Budh / Mercury",
+    "Deity": "Devi Saraswati",
+    "RecommendedPujas": [
+      {
+        "name": " Budh Graha Shanti Puja",
+        "imagePath" : "21 - 900 x 600 px Budh grah shanti puja.JPG"
+      },
+      {
+        "name": "Saraswati Puja",
+        "imagePath" : "22 - 900 x 600 px Saraswati Puja.JPG"
+      },
+      {
+        "name": "Vidyavardhak Anushthan",
+        "imagePath" : "23 - 900 x 600 px Vidyavardhak Anushthan.jpg"
+      }
+    ],
+    "mahaPooja": "Not Required",
+    "imagePath" : ""
+  },
+  {
+    "number": 6,
+    "RulingPlanet": "Shukra / Venus",
+    "Deity": "Devi Mahalakshmi",
+    "RecommendedPujas": [
+      {
+        "name": "Shukra Graha Shanti Puja",
+        "imagePath" : "24- 900 x 600 px Shukra Grah Shaanti PujaI.JPG"
+      },
+      {
+        "name": "Dhanvarsha Anushthan",
+        "imagePath" : "25 - 900 x 600 px Dhanvarsha Anushthan.jpg"
+      },
+      {
+        "name": "Kanakdhara Stotra Paath",
+        "imagePath" : "26 - 900 x 600 px -Kanakdhara Stotra Paath.jpg"
+      }
+    ],
+    "mahaPooja": "Not Required",
+    "imagePath" : ""
+  },
+  {
+    "number": 7,
+    "RulingPlanet": "Surya / Sun",
+    "Deity": "Shri Aditya/ Shri Ram/ Shri Narayan",
+    "RecommendedPujas": [
+      {
+        "name": " Ketu Graha Shanti Puja",
+        "imagePath" : "27 - 900 x 600 px Ketu Grah Shaanti Puja.JPG"
+      },
+      {
+        "name": "Nav chandi Anusthan",
+        "imagePath" : "28 - 900 x 600 px Nav chandi Anusthan.JPG"
+      },
+      {
+        "name": " Devi Bagulamukhi Anushthan",
+        "imagePath" : "29 - 900 x 600 px Devi Bagulamukhi Anushthan.JPG"
+      }
+    ],
+    "mahaPooja": "Shat Chandi Maha Anusthan",
+    "imagePath" : "30 - 900 x 600 px Shat Chandi Maha Anusthan.JPG"
+  },
+  {
+    "number": 8,
+    "RulingPlanet": "Shani / Saturn",
+    "Deity": "Shiva / Hanuman",
+    "RecommendedPujas": [
+      {
+        "name": " Shani Graha Shanti Puja",
+        "imagePath" : "31 - 900 600 px  Shani Graha Shanti Puja.JPG"
+      },
+      {
+        "name": "Sunderkaand Paath",
+        "imagePath" : "32 - 900 x 600 px - Sunderkaand Paath.JPG"
+      },
+      {
+        "name": "Hanuman Chalisa Paath",
+        "imagePath" : "33 - 900 x 600 px - Hanuman Chalisa path.JPG"
+      },
+      {
+        "name": "Paarthiv Shivling Puja",
+        "imagePath" : "34 - 900 x 600 px - Paarthiv Shivling Puja.jpg"
+      }
+    ],
+    "mahaPooja": "Sahastra Bilwarchan",
+    "imagePath" : "35 - 900  600 px Sahastra Bilwarchan.JPG"
+  },
+  {
+    "number": 9,
+    "RulingPlanet": "Mangal / Mars",
+    "Deity": "Shri Hanuman",
+    "RecommendedPujas": [
+      {
+        "name": " Mangal Graha Shanti Puja",
+        "imagePath" : "36 - 900 x 600 px Mangal Graha Shanti Puja.JPG"
+      },
+      {
+        "name": "Sunderkaand Paath",
+        "imagePath" : "32 - 900 x 600 px - Sunderkaand Paath.JPG"
+      },
+      {
+        "name": "Hanuman Chalisa Paath",
+        "imagePath" : "33 - 900 x 600 px - Hanuman Chalisa path.JPG"
+      }
+    ],
+    "mahaPooja": "Mangal Rin Mochan Puja",
+    "imagePath" : "37 - 900 x 600 px - Mangal Rin Mochan Puja.JPG"
+  }
+]

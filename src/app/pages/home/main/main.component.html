@@ -1,0 +1,284 @@
+<div class="login-wrapper d-flex flex-column flex-fill position-relative">  
+  <nav class="navbar navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand text-light">Rudralife's Rudraksha Recommendations</a>
+    </div>
+  </nav>
+</div>
+
+<main class="container mt-4">
+  <div class="p-4 p-md-5 mb-4">
+    <img src="../../../../assets/images/banner img.jpg" style="max-width: 100%; height: auto;" alt="Image description">
+  </div>
+
+
+  <div class="container mt-3">
+    <div class="row p-5">
+      <div class="login-bx">
+        <div class="inner-blc">
+          <h1 class="display-4 text-center">Enter your details</h1>
+          <form [formGroup]="Form" (ngSubmit)="onSubmit()">
+            <div class="col-lg-12">
+              <div class="form-group">
+                <label for="name">
+                  Name<span class="text-danger">*</span>
+                </label>
+                <input id="name" type="text" name="name"
+                  [ngClass]="{ 'is-invalid': submitted && Form.controls.name.errors}" formControlName="name"
+                  class="form-control">
+                <div *ngIf="submitted && Form.controls.name.errors" class="text-danger">
+                  <div class="text-danger" *ngIf="Form.controls.name.errors?.required">
+                    Name is required.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-12">
+              <div class="form-group">
+                <label for="phone">
+                  Phone<span class="text-danger">*</span>
+                </label>
+                <input id="phone" type="text" name="phone" maxlength="10"
+                  [ngClass]="{ 'is-invalid': submitted && Form.controls.phone.errors}" formControlName="phone"
+                  class="form-control">
+                <div *ngIf="submitted && Form.controls.phone.errors" class="text-danger">
+                  <div class="text-danger" *ngIf="Form.controls.phone.errors?.required">
+                    Phone is required.
+                  </div>
+                  <div class="text-danger" *ngIf="Form.controls.phone.errors?.pattern">
+                    Phone is invalid.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-12">
+              <div class="form-group">
+                <label for="email">
+                  Email<span class="text-danger">*</span>
+                </label>
+                <input id="email" type="email" name="email"
+                  [ngClass]="{ 'is-invalid': submitted && Form.controls.email.errors}" formControlName="email"
+                  class="form-control">
+                <div *ngIf="submitted && Form.controls.email.errors" class="text-danger">
+                  <div class="text-danger" *ngIf="Form.controls.email.errors?.required">
+                    Email is required.
+                  </div>
+                  <div class="text-danger" *ngIf="Form.controls.email.errors?.email">
+                    Email address is invalid.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-12">
+              <div class="form-group">
+                <label for="dob">
+                  Date of Birth<span class="text-danger">*</span>
+                </label>
+                <input id="dob" type="date" name="dob"
+                  [ngClass]="{ 'is-invalid': submitted && Form.controls.dob.errors}" formControlName="dob" [max]="date"
+                  class="form-control">
+                <div *ngIf="submitted && Form.controls.dob.errors" class="text-danger">
+                  <div class="text-danger" *ngIf="Form.controls.dob.errors?.required">
+                    Date of birth is required.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="form-group login-link-rw d-flex">
+              <button type="submit" class="btn btn-primary rounded-pill flex-fill">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container marketing rounded text-center border border-light border-3 ">
+    <h1 class="pt-2">Our Clients</h1>   
+      <ng-image-slider [images]="imageObject" [infinite]="true" [autoSlide]="1" [imageSize]="{width: '200', height: 200}"
+      slideImage="1" #nav></ng-image-slider>
+  </div>
+
+  <div class="container marketing rounded text-center border border-light border-3 mt-3">
+    <h1 class="pt-2">About Rudralife</h1>
+    <div class="row p-5">
+      <div class="col-lg-3 p-2">
+        <img src="../../../../assets/images/credibility-icon-1.png" width="140" height="140" alt="" srcset="">
+        <p class="text-primary h1 p-2">910</p>
+        <p class="h-25  p-2">Number Of Exhibitions</p>
+      </div>
+      <div class="col-lg-3 p-2">
+        <img src="../../../../assets/images/credibility-icon-2.png" width="140" height="140" alt="" srcset="">
+        <p class="text-success h1 p-2">315265</p>
+        <p class="h-25  p-2">Customers</p>
+      </div>
+      <div class="col-lg-3 p-2">
+        <img src="../../../../assets/images/credibility-icon-3.png" width="140" height="140" alt="" srcset="">
+        <p class="text_yellow h1 p-2">72%</p>
+        <p class="h-25  p-2"> Repeat Customers</p>
+      </div>
+      <div class="col-lg-3 p-2">
+        <img src="../../../../assets/images/credibility-icon-4.png" width="140" height="140" alt="" srcset="">
+        <p class="text-warning h1 p-2">100%</p>
+        <p class="h-25  p-2"> Satisfied Customers</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="row mt-3">
+    <div class="col-md-6">
+      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-primary">Our Mission</strong>
+          <p class="card-text mb-auto"> It is our mission to spread awareness and educate the masses about the divine
+            Rudraksha beads. Our aim is
+            to supply the best quality Nepal Rudraksha to our customers and empower their lives through the power of
+            these gifts of Lord Shiva.</p>
+        </div>
+        <div class="col-auto d-none d-lg-block p-2">
+          <img src="../../../../assets/images/target.png" width="200" height="206" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-primary">Our Vision</strong>
+          <p class="mb-auto"> Since 22 years, Rudralife has been working dedicatedly to spread knowledge of Rudraksha to
+            the masses. We
+            have our own ISO certified laboratories for Rudraksha testing. We are the world's largest organisation of
+            Rudraksha due to our emphasis on quality, credibility and collecting customer experiences.</p>
+        </div>
+        <div class="col-auto d-none d-lg-block p-2">
+          <img src="../../../../assets/images/vision.png" width="200" height="200" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container marketing text-center m-3 border border-light border-3">
+    <h1 class="p-2">Know more about Rudraksha</h1>
+    <div class="row">
+      <div class="col-lg-3 mb-3">
+        <img src="../../../../assets/images/youtube.png" width="140" height="140" rounded alt="" srcset="">
+        <p class="h-25  p-2"> The elusive One Mukhi Rudraksha.</p>
+        <p><a class="btn btn-secondary " target="_blank" href="https://youtu.be/GfMEQ1y4K-c">View details
+            &raquo;</a></p>
+      </div>
+      <div class="col-lg-3 mb-3">
+        <img src="../../../../assets/images/youtube.png" width="140" height="140" rounded alt="" srcset="">
+        <p class="h-25  p-2">How to clean and maintain Rudraksha.</p>
+        <p><a class="btn btn-secondary" target="_blank" href="https://youtu.be/NvT40EOG9a8">View details
+            &raquo;</a></p>
+      </div>
+      <div class="col-lg-3 mb-3">
+        <img src="../../../../assets/images/youtube.png" width="140" height="140" rounded alt="" srcset="">
+        <p class="h-25  p-2">Myth vs Facts : Copper Coin Test.</p>
+        <p><a class="btn btn-secondary " target="_blank" href="https://youtu.be/efd1qawJ3V8">View details
+            &raquo;</a></p>
+      </div>
+      <div class="col-lg-3 mb-3">
+        <img src="../../../../assets/images/youtube.png" width="140" height="140" rounded alt="" srcset="">
+        <p class="h-25  p-2">Importance Of Sankalp Puja.</p>
+        <p><a class="btn btn-secondary " target="_blank" href="https://www.youtube.com/watch?v=3dZMaMDxoXs">View details
+            &raquo;</a></p>
+      </div>
+    </div>
+
+    <div class="row mt-5">
+      <div class="col-lg-3 mb-3">
+        <img src="../../../../assets/images/youtube.png" width="140" height="140" rounded alt="" srcset="">
+        <p class="h-25 p-2">The Elusive One Mukhi Rudraksha by Dr. Tanay Seetha.</p>
+        <p><a class="btn btn-secondary " target="_blank" href="https://www.youtube.com/watch?v=GfMEQ1y4K-c">View details
+            &raquo;</a></p>
+      </div>
+      <div class="col-lg-3 mb-3">
+        <img src="../../../../assets/images/youtube.png" width="140" height="140" rounded alt="" srcset="">
+        <p class="h-25  p-2">Rudraksha for Women and Women Empowerment.</p>
+        <p><a class="btn btn-secondary " target="_blank"
+            href="https://www.youtube.com/watch?v=IeK01rfOry8&list=PLpU76hmFLidBFEnbd4-5u98MLgUcyNc_Q&index=2">View
+            details &raquo;</a></p>
+      </div>
+      <div class="col-lg-3 mb-3">
+        <img src="../../../../assets/images/youtube.png" width="140" height="140" rounded alt="" srcset="">
+        <p class="h-25  p-2">Malas For Ultimate Success.</p>
+        <p><a class="btn btn-secondary " target="_blank"
+            href="https://www.youtube.com/watch?v=NTPWXSInEKA&list=PLpU76hmFLidCytgI0l6ywan2qqJDdBmiJ&index=32">View
+            details &raquo;</a></p>
+      </div>
+      <div class="col-lg-3 mb-3">
+        <img src="../../../../assets/images/youtube.png" width="140" height="140" rounded alt="" srcset="">
+        <p class="h-25 p-2">Rudralife Testimonial.</p>
+        <p><a class="btn btn-secondary" target="_blank"
+            href="https://www.youtube.com/watch?v=NPbrhwL-kBA&list=PLpU76hmFLidCaT4nm9aP5Gt5-IFVQuTaB&index=20">View
+            details &raquo;</a></p>
+      </div>
+    </div>
+
+
+  </div>
+
+</main>
+
+<!-- <footer class="blog-footer text-center mt-5">
+  <p class="m-2">
+    <a href="https://www.facebook.com/rudralife" target="_blank"><img src="../../../../assets/images/facebook.png"
+        class="pe-2" rounded alt="" srcset=""></a>
+    <a href="https://www.instagram.com/rudraliferudraksha/" target="_blank"><img
+        src="../../../../assets/images/instagram.png" class="pe-2" rounded alt="" srcset=""></a>
+    <a href="linkedin.com/in/rudraliferudraksha" target="_blank"><img src="../../../../assets/images/linkedin.png"
+        class="pe-2" rounded alt="" srcset=""></a>
+    <a href="https://www.quora.com/profile/Rudralife-1" target="_blank"><img src="../../../../assets/images/quora.png"
+        class="pe-2" rounded alt="" srcset=""></a>
+    <a href="https://pin.it/4OVI5Q3" target="_blank"> <img src="../../../../assets/images/pinterest.png" class="pe-2"
+        rounded alt="" srcset=""></a>
+    <a href="https://www.youtube.com/c/rudralife" target="_blank"> <img src="../../../../assets/images/youtube_icon.png"
+        class="pe-2" rounded alt="" srcset=""></a>
+  </p>
+</footer> -->
+
+<div class="d-flex flex-column h-100">
+
+  <!-- FOOTER -->
+  <footer class="w-100 py-4 flex-shrink-0">
+    <div class="container py-4">
+      <div class="row gy-4 gx-5">
+        <div class="col-lg-4 col-md-6">
+          <h5 class="h1 text-white">Follow us on Social media</h5>
+        </div>
+        <div class="col-lg-2 col-md-6">
+          <h5 class="text-white mb-3">Quick links</h5>
+          <ul class="list-unstyled text-muted">
+            <li><a href="https://www.facebook.com/rudralife">Facebook</a></li>
+            <li><a href="https://www.instagram.com/rudraliferudraksha/">Instagram</a></li>
+            <li><a href="linkedin.com/in/rudraliferudraksha">Linkedin</a></li>
+            <li><a href="https://www.quora.com/profile/Rudralife-1">Pinterest</a></li>
+            <li><a href="https://www.youtube.com/c/rudralife">Quora</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <h5 class="text-white mb-3">Newsletter</h5>
+          <p class="m-2">
+            <a href="https://www.facebook.com/rudralife" target="_blank"><img
+                src="../../../../assets/images/facebook.png" class="pe-2" rounded alt="" srcset=""></a>
+            <a href="https://www.instagram.com/rudraliferudraksha/" target="_blank"><img
+                src="../../../../assets/images/instagram.png" class="pe-2" rounded alt="" srcset=""></a>
+            <a href="linkedin.com/in/rudraliferudraksha" target="_blank"><img
+                src="../../../../assets/images/linkedin.png" class="pe-2" rounded alt="" srcset=""></a>
+            <a href="https://www.quora.com/profile/Rudralife-1" target="_blank"><img
+                src="../../../../assets/images/quora.png" class="pe-2" rounded alt="" srcset=""></a>
+            <a href="https://pin.it/4OVI5Q3" target="_blank"> <img src="../../../../assets/images/pinterest.png"
+                class="pe-2" rounded alt="" srcset=""></a>
+            <a href="https://www.youtube.com/c/rudralife" target="_blank"> <img
+                src="../../../../assets/images/youtube_icon.png" class="pe-2" rounded alt="" srcset=""></a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+
+<a href="https://api.whatsapp.com/send?
+phone=+919892956110
+&text=hello" class="float" target="_blank" id="sendMessageToWhatsapp"> 
+</a>

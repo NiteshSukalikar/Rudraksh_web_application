@@ -8,7 +8,6 @@ import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { HttpClientModule } from '@angular/common/http';
 import { NotifierModule } from 'angular-notifier';
 import { NgxUiLoaderModule } from 'ngx-ui-loader';
-import { customNotifierOptions } from './utilities/_services/notification.service';
 import { NgIdleKeepaliveModule } from '@ng-idle/keepalive';
 import { ModalModule } from 'ngx-bootstrap/modal';
 import { AvatarModule } from 'ngx-avatar';
@@ -24,7 +23,6 @@ import { AngularEditorModule } from '@kolkov/angular-editor';
     AppRoutingModule,
     BrowserAnimationsModule,
     HttpClientModule,
-    NotifierModule.withConfig(customNotifierOptions),
     NgxUiLoaderModule,
     NgxPaginationModule,
     NgIdleKeepaliveModule.forRoot(),

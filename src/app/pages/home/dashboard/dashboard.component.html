@@ -1,0 +1,98 @@
+<div class="login-wrapper d-flex flex-column flex-fill position-relative">
+  <nav class="navbar navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand text-light">Amazon Recommendations</a>
+    </div>
+  </nav>
+</div>
+
+<div class="container marketing mt-3 ">
+  <a href="{{urlLink}}" target="_blank">
+    <ng-image-slider [images]="imageObject" [infinite]="true" [imagePopup]="false" [autoSlide]="1"
+      (imageClick)="imageClick($event)" [showArrow]="false" [imageSize]="{width: '200', height: 200}" slideImage="1"
+      #nav></ng-image-slider>
+  </a>
+</div>
+
+<div class="login-wrapper d-flex flex-column flex-fill position-relative mt-5">
+  <nav class="navbar navbar-dark bg-dark">
+    <div class="container-fluid justify-content-center">
+      <h1 class="text-light">Rudralife's Rudraksha Team</h1>
+    </div>
+    <img src="../../../../assets/images/Panel Expert.png" class="banner_pannel_img" height="100%" width="100%" alt="">
+  </nav>
+</div>
+
+
+<div class="login-wrapper d-flex flex-column flex-fill position-relative mt-3">
+  <nav class="navbar navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand text-light">Rudraksha Recommendations</a>
+    </div>
+  </nav>
+</div>
+
+<div class="container marketing mt-3 ">
+  <div class="" *ngFor="let item of rudrakshaDataList">
+    <div class="row featurette rounded border border-dark border-3 mb-3" *ngFor="let itemData of item.Recommendations">
+      <div class="col-md-7">
+        <h2 class="featurette-heading mt-5">{{itemData.name}}
+        </h2>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+          industry's standard dummy text ever since the 1500s,</p>
+      </div>
+      <div class="col-md-5">
+        <img src='../../../../assets/images/rudraksh/{{itemData.imagePath}}' alt="" width="250" height="250"
+          class="p-3">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="login-wrapper d-flex flex-column flex-fill position-relative mt-3">
+  <nav class="navbar navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand text-light">Pooja Recommendations</a>
+    </div>
+  </nav>
+</div>
+
+<div class="container marketing mt-3 ">
+  <div class="col-md-12 text-center">
+    <h2 class="featurette-heading mt-5">Ruling Planet : {{poojaRecommdationsData[0].RulingPlanet}}
+    </h2>
+    <p class="lead">Deity : {{poojaRecommdationsData[0].Deity}}
+    </p>
+  </div>
+  <div class="row featurette rounded border border-dark border-3 mb-3" *ngFor="let item of poojaDataList">
+    <div class="col-md-7">
+      <h2 class="featurette-heading mt-5">{{item.name}}
+      </h2>
+      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+        standard dummy text ever since the 1500s,</p>
+    </div>
+    <div class="col-md-5">
+      <img src='../../../../assets/images/pooja/{{item.imagePath}}' alt="" width="250" height="250" class="p-3">
+    </div>
+  </div>
+
+  <div class="container m-3 d-flex justify-content-center">
+    <a href="https://calendly.com/rudraliferecommendations/rudralife-recommendations?month=2022-06" target="_blank">
+      <button class="btn btn-large btn-primary">Speak to an Expert</button></a>
+  </div>
+
+  <h1 *ngIf="mahaPoojaName && mahaPoojaImage && mahaPoojaName!='Not Required'" class="text-center">Maha Pooja
+    Recommendations</h1>
+  <div class="row featurette rounded border border-dark border-3 mb-3"
+    *ngIf="mahaPoojaName && mahaPoojaImage && mahaPoojaName!='Not Required' ">
+    <div class="col-md-7">
+      <h2 class="featurette-heading mt-5">{{mahaPoojaName}}
+      </h2>
+      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+        standard dummy text ever since the 1500s,</p>
+    </div>
+    <div class="col-md-5">
+      <img src='../../../../assets/images/pooja/{{mahaPoojaImage}}' alt="" width="250" height="250" class="p-3">
+    </div>
+  </div>
+</div>
