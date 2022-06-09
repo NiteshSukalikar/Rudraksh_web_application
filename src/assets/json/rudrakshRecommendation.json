@@ -1,148 +1,357 @@
 [
     {
         "number": "1",
-        "Recommendations":[
+        "Recommendations": [
             {
                 "name": "1 Mukhi",
-                "imagePath" : "1 Mukhi.jpg"
+                "Deity": "Lord Shiva",
+                "Planet": "Sun",
+                "Mantra": "Om Hreem Namah",
+                "link": "https://rudralife.com/product/one-mukhi-capping-rudraksha",
+                "Benefits": "For name, fame, growth, success and meditation. For ailments like blood pressure and heart health. It is said to be good for the heart and eyesight too. It is excellent for improving meditative focus which helps us in achieving success.",
+                "imagePath": "1 Mukhi.jpg",
+                "dynamicPrice" : "1 Mukhi capping  (Dynamic pricing) " 
             },
             {
                 "name": "12 Mukhi",
-                "imagePath" : "12 Mukhi.jpg"
+                "Deity": " Lord Aditya (Surya or the Sun)",
+                "Planet": "Sun",
+                "Mantra": "Om Krowm Kshowm Rowm Namah: Om Namah",
+                "link": "https://rudralife.com/product/twelve-mukhi-small-rudraksha",
+                "Benefits": "For name, fame, Growth and Success. Good Administration skills and leadership quality. Extremely good for heart related problems. It strengthens internal organs and also beneficial for ailments affecting eyes and skin.",
+                "imagePath": "12 Mukhi.jpg",
+                "price" : {
+                    "Small" : " Rs 12000",
+                    "Large " : "Rs 15000",
+                    "Collector" : "Rs 18000"
+                }
+                
             },
             {
                 "name": "19 Mukhi",
-                "imagePath" : "19 Mukhi.jpg"
+                "Deity": "Lord Vishnu",
+                "Planet": "Sun",
+                "Mantra": "Om Hreem Hum Namah",
+                "link": "https://rudralife.com/product/nineteen-mukhi-rudraksha",
+                "Benefits": "For good luck and fulfilling materialistic desires and for success and growth. It is extremely effective for improving and strengthening eyesight and internal organs. It is also good for stress control and the heart.",
+                "imagePath": "19 Mukhi.jpg",
+                "price" : {
+                    "Large" : " Rs 1500000",
+                    "SuperCollector" : "Rs 2400000",
+                    "Collector" : "Rs 1800000"
+                }
             }
         ]
     },
-     {
+    {
         "number": "2",
-        "Recommendations":[
+        "Recommendations": [
             {
                 "name": "2 Mukhi",
-                "imagePath" : "1 Mukhi.jpg"
+                "Deity": "Lord Ardhanareeshwar",
+                "Planet": "Moon",
+                "Mantra": "Om Namah",
+                "link": "https://rudralife.com/product/two-mukhi-rudraksha",
+                "Benefits": "For ailments like cold, cough, headache, depression. Beneficial for neurological problems and good sleep. It is said to be extremely good for mental peace unity, confidence and a calm demeanour.",
+                "imagePath": "2 Mukhi.jpg",
+                "dynamicPrice" : "2 Mukhi capping  (Dynamic pricing) " 
             },
             {
                 "name": "GauriShankar",
-                "imagePath" : "12 Mukhi.jpg"
+                "Deity": "Lord Shiva and Goddess Parvati",
+                "Planet": "Moon",
+                "Mantra": "Om Gaurishankaraya Namah",
+                "link": "https://rudralife.com/product/gaurishankar-rudraksha",
+                "Benefits": "For building strong relationships and bring marital happiness. Another form of Gauri Shankar is the Garbh Gauri Shankar, where one bead is smaller than the other. It is said to be ideal for women who are finding it difficult to conceive.",
+                "imagePath": "Gaurishankar Rudraksha.jpg",
+                "dynamicPrice" : "GauriShankar (Dynamic pricing) " 
             },
             {
                 "name": "20 Mukhi",
-                "imagePath" : "20 Mukhi.jpg"
+                "Deity": "Lord Brahma",
+                "Planet": "Moon",
+                "Mantra": "Om Hreem Hreem Hum Hum Brahmaney Namah",
+                "link": "https://rudralife.com/product/twenty-mukhi-rudraksha",
+                "Benefits": "For knowledge, powers of visualisation and mental peace. It is said to derive energy from various sources thereby making it a storehouse of divine energy. It facilitates expansion of mind, intellect and consciousness",
+                "imagePath": "20 Mukhi.jpg",
+                "price" : {
+                    "Large" : "Contact Us",
+                    "SuperCollector" : "Contact Us",
+                    "Collector" : "Contact Us"
+                }
             }
         ]
     },
     {
         "number": "3",
-        "Recommendations":[
+        "Recommendations": [
             {
                 "name": "5 Mukhi",
-                "imagePath" : "5 Mukhi.jpg"
+                "Deity": "Kalaagni Rudra",
+                "Planet": "Jupiter",
+                "Mantra": "Om Hreem Namah",
+                "link": "https://rudralife.com/product/five-mukhi-rudraksha",
+                "Benefits": "Good for meditation and spiritual enhancement. For blood pressure, acidity and cardiac problems. The wearer becomes relaxed and stress free in his daily pursuits.",
+                "imagePath": "5 Mukhi.jpg",
+                "dynamicPrice" : "5 Mukhi capping  (Dynamic pricing)" 
             },
             {
                 "name": "15 Mukhi",
-                "imagePath" : "15 Mukhi.jpg"
+                "Deity": "Lord Pashupatinath",
+                "Planet": "Jupiter",
+                "Mantra": "Om Hreem Namah",
+                "link": "https://rudralife.com/product/fifteen-mukhi-rudraksha",
+                "Benefits": "Best substitute for 1 mukhi, Nepal Rudraksha. Good for wealth and asset creation. Other properties similar to 14 mukhi. It can offer all the benefits of the Rudraksha beads from 1 to 14 Mukhi. The power of creative visualisation increases",
+                "imagePath": "15 Mukhi.jpg",
+                "price" : {
+                    "Large" : " Rs 120000",
+                    "SuperCollector" : " Rs 180000",
+                    "Collector" : "Rs 150000"
+                }
             }
         ]
     },
     {
         "number": "4",
-        "Recommendations":[
+        "Recommendations": [
             {
                 "name": "8 Mukhi",
-                "imagePath" : "8 Mukhi.jpg"
+                "Deity": "Lord Ganesh",
+                "Planet": "Rahu",
+                "Mantra": "Om Hum  Namah",
+                "link": "https://rudralife.com/product/eight-mukhi-large-rudraksha",
+                "Benefits": "For removing obstacles and hurdles and good for career growth. For back pain, body pain, kidney and liver ailments. It is clearly mentioned in the Shastras that the wearer of this Rudraksha becomes victorious in life.",
+                "imagePath": "8 Mukhi.jpg",
+                "price" : {
+                    "Large" : "Rs 15000" ,
+                    "Small" : " Rs 12000",
+                    "Collector" : "Rs 18000"
+                }
             },
             {
                 "name": "10 Mukhi",
-                "imagePath" : "10 Mukhi.jpg"
+                "Deity": "Lord Shiva",
+                "Planet": "Sun",
+                "Mantra": "Om Hreem Namah",
+                "link": "https://rudralife.com/product/one-mukhi-capping-rudraksha",
+                "Benefits": "For name, fame, growth, success and meditation. For ailments like blood pressure and heart health. It is said to be good for the heart and eyesight too. It is excellent for improving meditative focus which helps us in achieving success.",
+                "imagePath": "10 Mukhi.jpg"
             },
             {
                 "name": "16 Mukhi",
-                "imagePath" : "16 Mukhi.jpg"
+                "Deity": "Lord Ram",
+                "Planet": "Rahu",
+                "Mantra": "Om Hreem Hum  Namah",
+                "link": "https://rudralife.com/product/sixteen-mukhi-rudraksha",
+                "Benefits": "ai Rudrksha- for victory against enemies and court cases. The 16 Mukhi Rudraksha is a good talisman for recovering from acute and chronic ailments. It provides healing energy to kidneys, intestines, lower back etc.",
+                "imagePath": "16 Mukhi.jpg",
+                "price" : {
+                    "Large" : " Rs 210000",
+                    "SuperCollector" : " Rs 330000",
+                    "Collector" : "Rs 240000"
+                }
             }
         ]
     },
     {
         "number": "5",
-        "Recommendations":[
+        "Recommendations": [
             {
                 "name": "4 Mukhi",
-                "imagePath" : "4 Mukhi.jpg"
+                "Deity": "Brahma",
+                "Planet": "Mercury",
+                "Mantra": "Om Hreem Namah",
+                "link": "https://rudralife.com/product/four-mukhi-rudraksha",
+                "Benefits": "Increases memory power, concentration, focus and creativity. Differently abled children are suggested to wear this bead. Students, writers and artists benefit tremendously when they wear it.",
+                "imagePath": "4 Mukhi.jpg",
+                "dynamicPrice" : "4 Mukhi capping  (Dynamic pricing) " 
             },
             {
                 "name": "10 Mukhi",
-                "imagePath" : "10 Mukhi.jpg"
+                "Deity": "Lord Shiva",
+                "Planet": "Sun",
+                "Mantra": "Om Hreem Namah",
+                "link": "https://rudralife.com/product/one-mukhi-capping-rudraksha",
+                "Benefits": "For name, fame, growth, success and meditation. For ailments like blood pressure and heart health. It is said to be good for the heart and eyesight too. It is excellent for improving meditative focus which helps us in achieving success.",
+                "imagePath": "10 Mukhi.jpg"
             }
         ]
     },
     {
         "number": "6",
-        "Recommendations":[
+        "Recommendations": [
             {
-                "name": "2 Mukhi",
-                "imagePath" : "1 Mukhi.jpg"
+                "name": "6 Mukhi",
+                "Deity": "Lord Kartikeya",
+                "Planet": "Venus",
+                "Mantra": "Om Hreem Hum Namah",
+                "link": "https://rudralife.com/product/two-mukhi-rudraksha",
+                "Benefits": "Good for knowledge, wisdom, communication skills and self confidence. It is found useful in strengthening the functions of nerves and muscles. It is believed to bless the wearer with wisdom, increased intelligence, will power and a steady mind.",
+                "imagePath": "6 Mukhi.jpg",
+                "dynamicPrice" : "6 Mukhi capping  (Dynamic pricing) " 
             },
             {
-                "name": "GauriShankar",
-                "imagePath" : "12 Mukhi.jpg"
+                "name": "13 Mukhi",
+                "Deity": "Indra Dev",
+                "Planet": "Venus",
+                "Mantra": "None",
+                "link": "https://rudralife.com/product/thirteen-mukhi-small-rudraksha",
+                "Benefits": "Improves marketing skills and convincing power. Good for finance. Enhances aura and gives charisma and attraction. Good for diabetes and sexual disorders.  It also gives riches accompanied by honour and fulfilled desires",
+                "imagePath": "12 Mukhi.jpg",
+                "price" : {
+                    "Large" : "Rs 27000" ,
+                    "Small" : " Rs 24000",
+                    "Collector" : "Rs 30000"
+                }
             },
             {
-                "name": "19 Mukhi",
-                "imagePath" : "19 Mukhi.jpg"
+                "name": "21 Mukhi",
+                "Deity": "Lord Kuber",
+                "Planet": "Venus",
+                "Mantra": "Om Hreem Hoom Shivmitraye Namah",
+                "link": "https://rudralife.com/product/twenty-one-mukhi-rudraksha",
+                "Benefits": "This Rudraksha is extremely beneficial for long life, controlling blood sugar and prostrate problems. The wearer of this Rudraksha is abundantly showered with all possible riches and good fortune.",
+                "imagePath": "21 Mukhi.jpg",
+                "price" : {
+                    "Large" : "Contact Us",
+                    "SuperCollector" : "Contact Us",
+                    "Collector" : "Contact Us"
+                }
             }
         ]
     },
     {
         "number": "7",
-        "Recommendations":[
+        "Recommendations": [
             {
                 "name": "9 Mukhi",
-                "imagePath" : "9 Mukhi.jpg"
+                "Deity": "Devi Durga",
+                "Planet": "Ketu",
+                "Mantra": "Om Hreem Hum Namah",
+                "link": "https://rudralife.com/product/nine-mukhi-small-rudraksha",
+                "Benefits": "For energy, power, dynamism and fearlessness.Good for ailments of stomach and skin.  It increases spiritual inclination and faith. Devotion to God can be felt at the core of existence. ",
+                "imagePath": "9 Mukhi.jpg",
+                "price" : {
+                    "Large" : "Rs 18000" ,
+                    "Small" : " Rs 15000",
+                    "Collector" : "Rs 21000"
+                }
+               
             },
             {
                 "name": "10 Mukhi",
-                "imagePath" : "10 Mukhi.jpg"
+                "Deity": "Lord Vishnu",
+                "Planet": "None",
+                "Mantra": "Om Hreem Namah",
+                "link": "https://rudralife.com/product/ten-mukhi-small-rudraksha",
+                "Benefits": "Protection from negativity and Nazar Dosh.Good for Vaastu and legal/court cases. For Insomnia. A 10 Mukhi Rudraksha is said to be effective in strengthening the immune system and to be helpful in skin and stomach related issues.",
+                "imagePath": "10 Mukhi.jpg",
+                "price" : {
+                    "Large" : "Rs 18000" ,
+                    "Small" : " Rs 15000",
+                    "Collector" : "Rs 21000"
+                }
             }
         ]
     },
     {
         "number": "8",
-        "Recommendations":[
+        "Recommendations": [
             {
                 "name": "7 Mukhi",
-                "imagePath" : "7 Mukhi.jpg"
+                "Deity": "Mahalakshmi",
+                "Planet": "Saturn",
+                "Mantra": "Om Hum Namah",
+                "link": "https://rudralife.com/product/seven-mukhi-large-rudraksha",
+                "Benefits": "Good for financial and career growth. For bones and nerves and neck pain. This divine bead nullifies the negative impact of Saturn. Wearers of the 7 Mukhi experience an upward trend in gaining income with finances stabilizing.",
+                "imagePath": "7 Mukhi.jpg",
+                "price" : {
+                    "Large" : "Rs 1800" ,
+                    "Collector" : " Rs 2100",
+                    "SuperCollector" : "Rs 4500"
+                }
             },
             {
                 "name": "14 Mukhi.jpg",
-                "imagePath" : "14 Mukhi.jpg"
+                "Deity": "Lord Shiva",
+                "Planet": "Saturn",
+                "Mantra": "Om Hreem Namah",
+                "link": "https://rudralife.com/product/fourteen-mukhi-medium-rudraksha",
+                "Benefits": "Awakens sixth sense and this leads to right and quick decision making that results in successful outcomes. This bead nullifies the malefic effects of both Mars and Saturn. It is good for overall luck",
+                "imagePath": "14 Mukhi.jpg",
+                "price" : {
+                    "Medium" : "Rs 150000" ,
+                    "Large" : " Rs 180000",
+                    "SuperCollector" : " Rs 240000",
+                    "Collector" : "Rs 210000"
+                }
             },
             {
                 "name": "17 Mukhi",
-                "imagePath" : "17 Mukhi.jpg"
+                "Deity": "Lord Vishwakarma",
+                "Planet": "Saturn",
+                "Mantra": "Om Namah Shivaya",
+                "link": "https://rudralife.com/product/seventeen-mukhi-large-rudraksha",
+                "Benefits": "Good for land and property business ; starting of new projects and its success. This bead is capable of creatively crafting an individual to become the master of his fate. It is extremely beneficial for bones and nerves.",
+                "imagePath": "17 Mukhi.jpg",
+                "price" : {
+                    "Large" : " Rs 420000",
+                    "SuperCollector" : " Rs 510000",
+                    "Collector" : "Rs 460000"
+                }
             }
         ]
     },
     {
         "number": "9",
-        "Recommendations":[
+        "Recommendations": [
             {
                 "name": "3 Mukhi",
-                "imagePath" : "3 Mukhi.jpg"
+                "Deity": "Agni",
+                "Planet": "Mars",
+                "Mantra": "Om Kleem Namah",
+                "link": "https://rudralife.com/product/three-mukhi-rudraksha",
+                "Benefits": "Self purification, confidence, fearlessness and good for overall health issues. It is said to be effective for people suffering from anemic conditions. It is also good for boosting your energy levels and improves blood circulation. ",
+                "imagePath": "3 Mukhi.jpg",
+                "dynamicPrice" : "3 Mukhi capping  (Dynamic pricing) " 
             },
             {
                 "name": "11 Mukhi",
-                "imagePath" : "11 Mukhi.jpg"
+                "Deity": "Lord Hanuman",
+                "Planet": "Mars",
+                "Mantra": "Om Hreem Hum Namah",
+                "link": "https://rudralife.com/product/eleven-mukhi-small-rudraksha",
+                "Benefits": "For self confidence, right decision making power, good networking skills, anger management and travelling protection. Improves Immune system. This bead is an essential for people who wish to be steadfast, still and calm while practicing yoga or meditation",
+                "imagePath": "11 Mukhi.jpg",
+                "price" : {
+                    "Large" : "Rs 21000" ,
+                    "Small" : " Rs 18000",
+                    "Collector" : "Rs 24000"
+                }
             },
             {
                 "name": "14 Mukhi",
-                "imagePath" : "14 Mukhi.jpg"
+                "Deity": "Lord Shiva",
+                "Planet": "Sun",
+                "Mantra": "Om Hreem Namah",
+                "link": "https://rudralife.com/product/one-mukhi-capping-rudraksha",
+                "Benefits": "For name, fame, growth, success and meditation. For ailments like blood pressure and heart health. It is said to be good for the heart and eyesight too. It is excellent for improving meditative focus which helps us in achieving success.",
+                "imagePath": "14 Mukhi.jpg"
             },
             {
                 "name": "18 Mukhi",
-                "imagePath" : "18 Mukhi.jpg"
+                "Deity": "Bhumi Devi",
+                "Planet": "Mars",
+                "Mantra": "Om Hreem Hoom Ekatvarupaye Hum Hreem Om",
+                "link": "https://rudralife.com/product/eighteen-mukhi-rudraksha",
+                "Benefits": "Expansion of existing business, launching of new venture and good for land related business. It keeps the body sturdy, fit, supple and also helps in Yogic practices. It is extremely good for leading a life that is mostly disease free.",
+                "imagePath": "18 Mukhi.jpg",
+                "price" : {
+                    "Large" : " Rs 750000",
+                    "SuperCollector" : "Rs 1200000",
+                    "Collector" : "Rs 900000"
+                }
             }
         ]
     }
-
 ]

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import _ from 'lodash';
 import moment from 'moment';
 import poojaRecommdations from '../../../../assets/json/poojaRecommdations.json';
 import rudrakshRecommdations from '../../../../assets/json/rudrakshRecommendation.json';
@@ -193,34 +194,51 @@ export class DashboardComponent implements OnInit {
       let controllerValue = getSecondRowCalculation;
 
       const result1 = [...this.numbersCount];
-      let count = this.countOccurance(result1);
+      //let count = this.countOccurance(result1);
+      let count = _.countBy([...this.numbersCount])
+      console.log( _.keys(count).filter((item:any) => { return item > 0})[2]);
+      
+      
 
-      if (count[DestinyValue] % 2 != 0) {
-        this.rudrakshRecommdationsData = this.RudrakshaData.filter(
-          (item: any) => {
-            return item.number == DestinyValue;
-          }
-        );
-        this.rudrakshaDataList.push(...this.rudrakshRecommdationsData);
+
+      for (let i = 1; i < 10; i++) {
+        if (count[i] % 2 != 0) {
+          this.rudrakshRecommdationsData = this.RudrakshaData.filter(
+            (item: any) => {
+              return item.number == (_.keys(count).filter((item:any) => { return item > 0})[i - 1]).toString();
+            }
+          );
+          this.rudrakshaDataList.push(...this.rudrakshRecommdationsData);
+        }
       }
 
-      if (count[healthValue] % 2 != 0) {
-        this.rudrakshRecommdationsData = this.RudrakshaData.filter(
-          (item: any) => {
-            return item.number == healthValue;
-          }
-        );
-        this.rudrakshaDataList.push(...this.rudrakshRecommdationsData);
-      }
+      // if (count[DestinyValue] % 2 != 0) {
+      //   this.rudrakshRecommdationsData = this.RudrakshaData.filter(
+      //     (item: any) => {
+      //       return item.number == DestinyValue;
+      //     }
+      //   );
+      //   this.rudrakshaDataList.push(...this.rudrakshRecommdationsData);
+      // }
 
-      if (count[controllerValue] % 2 != 0) {
-        this.rudrakshRecommdationsData = this.RudrakshaData.filter(
-          (item: any) => {
-            return item.number == controllerValue;
-          }
-        );
-        this.rudrakshaDataList.push(...this.rudrakshRecommdationsData);
-      }
+      // if (count[healthValue] % 2 != 0) {
+      //   this.rudrakshRecommdationsData = this.RudrakshaData.filter(
+      //     (item: any) => {
+      //       return item.number == healthValue;
+      //     }
+      //   );
+      //   this.rudrakshaDataList.push(...this.rudrakshRecommdationsData);
+      // }
+
+      // if (count[controllerValue] % 2 != 0) {
+      //   this.rudrakshRecommdationsData = this.RudrakshaData.filter(
+      //     (item: any) => {
+      //       return item.number == controllerValue;
+      //     }
+      //   );
+      //   this.rudrakshaDataList.push(...this.rudrakshRecommdationsData);
+      // }
+
       this.elimateDuplicateEntry();
     }else{
       this.rudrakshaDataList = this.RudrakshaData.slice(0,1);

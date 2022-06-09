@@ -74,9 +74,7 @@ export class MainComponent implements OnInit {
       title: 'Ms. Shilpa Shetty',
     },
   ];
-  imageMap: string[];
-  imageSize: string[];
-
+ 
   constructor(private commonService:CommonService,private router:Router) {
    
   }
@@ -100,7 +98,7 @@ export class MainComponent implements OnInit {
     if (this.Form.invalid) {
       return
     }      
-    this.router.navigate(['user/dashboard'] , {queryParams:{dob:this.Form.value.dob}});
+    this.router.navigate(['home/dashboard'] , {queryParams:{dob:this.Form.value.dob}});
     // let element: HTMLElement = document.getElementById('sendMessageToWhatsapp') as HTMLElement;
     // element.click();
   }

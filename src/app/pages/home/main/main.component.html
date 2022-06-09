@@ -1,16 +1,27 @@
-<div class="login-wrapper d-flex flex-column flex-fill position-relative">  
-  <nav class="navbar navbar-dark bg-dark">
-    <div class="container-fluid">
-      <a class="navbar-brand text-light">Rudralife's Rudraksha Recommendations</a>
-    </div>
+
+<div class="d-flex flex-column flex-fill">
+  <nav class="navbar navbar-light bg-dark justify-content-between">
+    <a class="navbar-brand text-light ms-2">+91-8976788266</a>
+    <form class="form-inline me-2">    
+      <a href="https://www.facebook.com/rudralife" target="_blank"><img
+        src="../../../../assets/images/facebook.png" class="pe-2" rounded alt="" srcset=""></a>
+    <a href="https://www.instagram.com/rudraliferudraksha/" target="_blank"><img
+        src="../../../../assets/images/instagram.png" class="pe-2" rounded alt="" srcset=""></a>
+    <a href="linkedin.com/in/rudraliferudraksha" target="_blank"><img
+        src="../../../../assets/images/linkedin.png" class="pe-2" rounded alt="" srcset=""></a>
+    <a href="https://www.quora.com/profile/Rudralife-1" target="_blank"><img
+        src="../../../../assets/images/quora.png" class="pe-2" rounded alt="" srcset=""></a>
+    </form>
   </nav>
 </div>
 
 <main class="container mt-4">
-  <div class="p-4 p-md-5 mb-4">
-    <img src="../../../../assets/images/banner img.jpg" style="max-width: 100%; height: auto;" alt="Image description">
+  <div class="p-4 p-md-5 mb-4 d-flex justify-content-center">
+    <picture>
+      <source srcset="../../../../assets/images/2.jpg" class="rounded-3" media="(min-width: 600px)"/>
+      <img class="rounded-3" src="../../../../assets/images/1.jpg" />
+    </picture>
   </div>
-
 
   <div class="container mt-3">
     <div class="row p-5">
@@ -94,124 +105,189 @@
   </div>
 
   <div class="container marketing rounded text-center border border-light border-3 ">
-    <h1 class="pt-2">Our Clients</h1>   
-      <ng-image-slider [images]="imageObject" [infinite]="true" [autoSlide]="1" [imageSize]="{width: '200', height: 200}"
+    <h1 class="pt-2">Our Clients</h1>
+    <h4 class="mb-3">Since 21 years, we have catered to a wide range of customers and influential personalities from all walks of life.</h4>
+    <ng-image-slider [images]="imageObject" [infinite]="false" [autoSlide]="3" class="image_size"
       slideImage="1" #nav></ng-image-slider>
   </div>
 
   <div class="container marketing rounded text-center border border-light border-3 mt-3">
     <h1 class="pt-2">About Rudralife</h1>
+    <h5 class="mb-3">Rudralife is a pioneer organisation in the field of Rudraksha. We collect customer experiences and are actively working towards helping more people on their journey towards upliftment.</h5>
+    <div class="row mt-3">
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative card-layout">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="h5 d-inline-block mb-2 text-primary">Our Mission</strong>
+            <p class="h5 card-text mb-auto"> It is our mission to spread awareness and educate the masses about the divine
+              Rudraksha beads. Our aim is
+              to supply the best quality Nepal Rudraksha to our customers and empower their lives through the power of
+              these gifts of Lord Shiva.</p>
+          </div>
+          <div class="col-auto d-none d-lg-block p-2">
+            <img src="../../../../assets/images/target.png" width="200" height="206" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative card-layout">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class=" h5 d-inline-block mb-2 text-primary">Our Vision</strong>
+            <p class=" h5 mb-auto"> Since 22 years, Rudralife has been working dedicatedly to spread knowledge of Rudraksha to
+              the masses. We
+              have our own ISO certified laboratories for Rudraksha testing. We are the world's largest organisation of
+              Rudraksha due to our emphasis on quality, credibility and collecting customer experiences.</p>
+          </div>
+          <div class="col-auto d-none d-lg-block p-2">
+            <img src="../../../../assets/images/vision.png" width="200" height="200" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="row p-5">
       <div class="col-lg-3 p-2">
         <img src="../../../../assets/images/credibility-icon-1.png" width="140" height="140" alt="" srcset="">
         <p class="text-primary h1 p-2">910</p>
-        <p class="h-25  p-2">Number Of Exhibitions</p>
+        <p class="m-2">Number Of Exhibitions</p>
       </div>
       <div class="col-lg-3 p-2">
         <img src="../../../../assets/images/credibility-icon-2.png" width="140" height="140" alt="" srcset="">
         <p class="text-success h1 p-2">315265</p>
-        <p class="h-25  p-2">Customers</p>
+        <p class="m-2">Customers</p>
       </div>
       <div class="col-lg-3 p-2">
         <img src="../../../../assets/images/credibility-icon-3.png" width="140" height="140" alt="" srcset="">
         <p class="text_yellow h1 p-2">72%</p>
-        <p class="h-25  p-2"> Repeat Customers</p>
+        <p class="m-2"> Repeat Customers</p>
       </div>
       <div class="col-lg-3 p-2">
         <img src="../../../../assets/images/credibility-icon-4.png" width="140" height="140" alt="" srcset="">
         <p class="text-warning h1 p-2">100%</p>
-        <p class="h-25  p-2"> Satisfied Customers</p>
+        <p class="m-2"> Satisfied Customers</p>
       </div>
     </div>
   </div>
 
-  <div class="row mt-3">
-    <div class="col-md-6">
-      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-        <div class="col p-4 d-flex flex-column position-static">
-          <strong class="d-inline-block mb-2 text-primary">Our Mission</strong>
-          <p class="card-text mb-auto"> It is our mission to spread awareness and educate the masses about the divine
-            Rudraksha beads. Our aim is
-            to supply the best quality Nepal Rudraksha to our customers and empower their lives through the power of
-            these gifts of Lord Shiva.</p>
-        </div>
-        <div class="col-auto d-none d-lg-block p-2">
-          <img src="../../../../assets/images/target.png" width="200" height="206" alt="">
-        </div>
-      </div>
-    </div>
-    <div class="col-md-6">
-      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-        <div class="col p-4 d-flex flex-column position-static">
-          <strong class="d-inline-block mb-2 text-primary">Our Vision</strong>
-          <p class="mb-auto"> Since 22 years, Rudralife has been working dedicatedly to spread knowledge of Rudraksha to
-            the masses. We
-            have our own ISO certified laboratories for Rudraksha testing. We are the world's largest organisation of
-            Rudraksha due to our emphasis on quality, credibility and collecting customer experiences.</p>
-        </div>
-        <div class="col-auto d-none d-lg-block p-2">
-          <img src="../../../../assets/images/vision.png" width="200" height="200" alt="">
-        </div>
-      </div>
-    </div>
-  </div>
+ 
 
-  <div class="container marketing text-center m-3 border border-light border-3">
-    <h1 class="p-2">Know more about Rudraksha</h1>
+
+
+  <div class="container marketing text-center border border-light border-3">
+    <h1 class="p-2 m-2">Know more about Rudraksha</h1>
+    <h5 class="mb-3">Explore our YouTube videos to know more about our products, services and upcoming events.</h5>
     <div class="row">
       <div class="col-lg-3 mb-3">
-        <img src="../../../../assets/images/youtube.png" width="140" height="140" rounded alt="" srcset="">
-        <p class="h-25  p-2"> The elusive One Mukhi Rudraksha.</p>
-        <p><a class="btn btn-secondary " target="_blank" href="https://youtu.be/GfMEQ1y4K-c">View details
-            &raquo;</a></p>
+        <img src="http://img.youtube.com/vi/GfMEQ1y4K-c/hqdefault.jpg" class="img-thumbnail" rounded alt=""
+          srcset="">
+        <p class="m-2"> The elusive One Mukhi Rudraksha.</p>
+        <p><a class="btn btn-primary text-white" target="_blank" href="https://youtu.be/GfMEQ1y4K-c">WATCH NOW</a></p>
       </div>
       <div class="col-lg-3 mb-3">
-        <img src="../../../../assets/images/youtube.png" width="140" height="140" rounded alt="" srcset="">
-        <p class="h-25  p-2">How to clean and maintain Rudraksha.</p>
-        <p><a class="btn btn-secondary" target="_blank" href="https://youtu.be/NvT40EOG9a8">View details
-            &raquo;</a></p>
+        <img src="http://img.youtube.com/vi/NvT40EOG9a8/hqdefault.jpg" class="img-thumbnail" rounded alt=""
+          srcset="">
+        <p class="m-2">How to clean and maintain Rudraksha.</p>
+        <p><a class="btn btn-primary text-white" target="_blank" href="https://youtu.be/NvT40EOG9a8">WATCH NOW</a></p>
       </div>
       <div class="col-lg-3 mb-3">
-        <img src="../../../../assets/images/youtube.png" width="140" height="140" rounded alt="" srcset="">
-        <p class="h-25  p-2">Myth vs Facts : Copper Coin Test.</p>
-        <p><a class="btn btn-secondary " target="_blank" href="https://youtu.be/efd1qawJ3V8">View details
-            &raquo;</a></p>
+        <img src="http://img.youtube.com/vi/efd1qawJ3V8/hqdefault.jpg" class="img-thumbnail" rounded alt=""
+          srcset="">
+        <p class="m-2">Myth vs Facts : Copper Coin Test.</p>
+        <p><a class="btn btn-primary text-white" target="_blank" href="https://youtu.be/efd1qawJ3V8">WATCH NOW</a></p>
       </div>
       <div class="col-lg-3 mb-3">
-        <img src="../../../../assets/images/youtube.png" width="140" height="140" rounded alt="" srcset="">
-        <p class="h-25  p-2">Importance Of Sankalp Puja.</p>
-        <p><a class="btn btn-secondary " target="_blank" href="https://www.youtube.com/watch?v=3dZMaMDxoXs">View details
-            &raquo;</a></p>
+        <img src="http://img.youtube.com/vi/3dZMaMDxoXs/hqdefault.jpg" class="img-thumbnail" rounded alt=""
+          srcset="">
+        <p class="m-2">Importance Of Sankalp Puja.</p>
+        <p><a class="btn btn-primary text-white" target="_blank" href="https://www.youtube.com/watch?v=3dZMaMDxoXs">WATCH NOW</a></p>
       </div>
     </div>
 
     <div class="row mt-5">
       <div class="col-lg-3 mb-3">
-        <img src="../../../../assets/images/youtube.png" width="140" height="140" rounded alt="" srcset="">
-        <p class="h-25 p-2">The Elusive One Mukhi Rudraksha by Dr. Tanay Seetha.</p>
-        <p><a class="btn btn-secondary " target="_blank" href="https://www.youtube.com/watch?v=GfMEQ1y4K-c">View details
-            &raquo;</a></p>
+        <img src="http://img.youtube.com/vi/GfMEQ1y4K-c/hqdefault.jpg" class="img-thumbnail" rounded alt=""
+          srcset="">
+        <p class="m-2">The Elusive One Mukhi Rudraksha by Dr. Tanay Seetha.</p>
+        <p><a class="btn btn-primary text-white" target="_blank" href="https://www.youtube.com/watch?v=GfMEQ1y4K-c">WATCH NOW</a></p>
       </div>
       <div class="col-lg-3 mb-3">
-        <img src="../../../../assets/images/youtube.png" width="140" height="140" rounded alt="" srcset="">
-        <p class="h-25  p-2">Rudraksha for Women and Women Empowerment.</p>
-        <p><a class="btn btn-secondary " target="_blank"
-            href="https://www.youtube.com/watch?v=IeK01rfOry8&list=PLpU76hmFLidBFEnbd4-5u98MLgUcyNc_Q&index=2">View
-            details &raquo;</a></p>
+        <img src="http://img.youtube.com/vi/IeK01rfOry8/hqdefault.jpg" class="img-thumbnail" rounded alt=""
+          srcset="">
+        <p class="m-2">Rudraksha for Women and Women Empowerment.</p>
+        <p><a class="btn btn-primary text-white" target="_blank"
+            href="https://www.youtube.com/watch?v=IeK01rfOry8&list=PLpU76hmFLidBFEnbd4-5u98MLgUcyNc_Q&index=2">WATCH NOW</a></p>
       </div>
       <div class="col-lg-3 mb-3">
-        <img src="../../../../assets/images/youtube.png" width="140" height="140" rounded alt="" srcset="">
-        <p class="h-25  p-2">Malas For Ultimate Success.</p>
-        <p><a class="btn btn-secondary " target="_blank"
-            href="https://www.youtube.com/watch?v=NTPWXSInEKA&list=PLpU76hmFLidCytgI0l6ywan2qqJDdBmiJ&index=32">View
-            details &raquo;</a></p>
+        <img src="http://img.youtube.com/vi/NTPWXSInEKA/hqdefault.jpg" class="img-thumbnail" rounded alt=""
+          srcset="">
+        <p class="m-2">Malas For Ultimate Success.</p>
+        <p><a class="btn btn-primary text-white" target="_blank"
+            href="https://www.youtube.com/watch?v=NTPWXSInEKA&list=PLpU76hmFLidCytgI0l6ywan2qqJDdBmiJ&index=32">WATCH NOW</a></p>
       </div>
       <div class="col-lg-3 mb-3">
-        <img src="../../../../assets/images/youtube.png" width="140" height="140" rounded alt="" srcset="">
-        <p class="h-25 p-2">Rudralife Testimonial.</p>
-        <p><a class="btn btn-secondary" target="_blank"
-            href="https://www.youtube.com/watch?v=NPbrhwL-kBA&list=PLpU76hmFLidCaT4nm9aP5Gt5-IFVQuTaB&index=20">View
-            details &raquo;</a></p>
+        <img src="http://img.youtube.com/vi/NPbrhwL-kBA/hqdefault.jpg" class="img-thumbnail" rounded alt=""
+          srcset="">
+        <p class="m-2">Rudralife Testimonial.</p>
+        <p><a class="btn btn-primary text-white" target="_blank"
+            href="https://www.youtube.com/watch?v=NPbrhwL-kBA&list=PLpU76hmFLidCaT4nm9aP5Gt5-IFVQuTaB&index=20">WATCH NOW</a></p>
+      </div>
+    </div>
+
+
+  </div>
+
+  <div class="container marketing text-center border border-light border-3">
+    <h1 class="p-2 m-2">Our Blog</h1>
+    <h5 class="mb-3">Explore our blogs and articles which help people know more about Rudraksha and Rudralife.</h5>
+    <div class="row">
+      <div class="col-lg-3 mb-3">
+        <img src="https://www.rudralife.com/blog/wp-content/uploads/2022/04/647-x-486-min-1.jpg" class="img-thumbnail" rounded alt="" srcset="">
+        <p><a class="btn btn-primary text-white m-2" target="_blank"
+            href="https://www.rudralife.com/blog/saraswati-bandh-the-best-rudraksha-for-students-memory-intelligence-and-academic-success/">LEARN MORE</a></p>
+      </div>
+      <div class="col-lg-3 mb-3">
+        <img src="https://www.rudralife.com/blog/wp-content/uploads/2022/04/647-x-486..jpg
+        " class="img-thumbnail" rounded alt="" srcset="">
+        <p><a class="btn btn-primary text-white m-2" target="_blank"
+            href="https://www.rudralife.com/blog/7-mukhi-cashbox-best-rudraksha-for-wealth-fame-progress-and-good-fortune-gets-the-blessings-of-maa-lakshmi/">LEARN MORE</a></p>
+      </div>
+      <div class="col-lg-3 mb-3">
+        <img src="https://www.rudralife.com/blog/wp-content/uploads/2022/05/Can-Women-wear-Rudraksha.jpg" class="img-thumbnail" rounded alt="" srcset="">
+        <p><a class="btn btn-primary text-white m-2" target="_blank"
+            href="https://www.rudralife.com/blog/can-women-wear-rudraksha/">LEARN MORE</a></p>
+      </div>
+      <div class="col-lg-3 mb-3">
+        <img src="https://www.rudralife.com/blog/wp-content/uploads/2022/05/Can-only-Hindus-can-wear-Rudraksha.jpg"
+        class="img-thumbnail" rounded alt="" srcset="">
+        <p><a class="btn btn-primary text-white m-2" target="_blank"
+            href="https://www.rudralife.com/blog/can-only-hindus-wear-rudraksha-2/">LEARN MORE</a></p>
+      </div>
+    </div>
+
+    <div class="row mt-5">
+      <div class="col-lg-3 mb-3">
+        <img src="https://www.rudralife.com/blog/wp-content/uploads/2022/05/SOR.jpg" class="img-thumbnail" rounded
+          alt="" srcset="">
+        <p><a class="btn btn-primary text-white m-2" target="_blank"
+            href="https://www.rudralife.com/blog/what-is-special-about-rudraksha-beads/">LEARN MORE</a></p>
+      </div>
+      <div class="col-lg-3 mb-3">
+        <img src="https://www.rudralife.com/blog/wp-content/uploads/2022/05/beads.jpg" class="img-thumbnail" rounded
+          alt="" srcset="">
+        <p><a class="btn btn-primary text-white m-2" target="_blank"
+            href="https://www.rudralife.com/blog/what-are-rudraksha-beads-where-are-they-available/">LEARN MORE</a></p>
+      </div>
+      <div class="col-lg-3 mb-3">
+        <img src="https://www.rudralife.com/blog/wp-content/uploads/2022/04/647-x-486-1.jpg" class="img-thumbnail"
+          rounded alt="" srcset="">
+        <p><a class="btn btn-primary text-white m-2" target="_blank"
+            href="https://www.rudralife.com/blog/swasthya-bandh-best-combination-for-overall-health-protection-gives-relief-from-diabetes-and-depression/">LEARN MORE</a></p>
+      </div>
+      <div class="col-lg-3 mb-3">
+        <img
+          src="https://www.rudralife.com/blog/wp-content/uploads/2022/05/WhatsApp-Image-2022-05-24-at-11.23.22-AM.jpeg"
+          class="img-thumbnail" rounded alt="" srcset="">
+        <p><a class="btn btn-primary text-white m-2" target="_blank"
+            href="https://www.rudralife.com/blog/right-way-of-making-rudraksha-mala/">LEARN MORE</a></p>
       </div>
     </div>
 
@@ -220,44 +296,20 @@
 
 </main>
 
-<!-- <footer class="blog-footer text-center mt-5">
-  <p class="m-2">
-    <a href="https://www.facebook.com/rudralife" target="_blank"><img src="../../../../assets/images/facebook.png"
-        class="pe-2" rounded alt="" srcset=""></a>
-    <a href="https://www.instagram.com/rudraliferudraksha/" target="_blank"><img
-        src="../../../../assets/images/instagram.png" class="pe-2" rounded alt="" srcset=""></a>
-    <a href="linkedin.com/in/rudraliferudraksha" target="_blank"><img src="../../../../assets/images/linkedin.png"
-        class="pe-2" rounded alt="" srcset=""></a>
-    <a href="https://www.quora.com/profile/Rudralife-1" target="_blank"><img src="../../../../assets/images/quora.png"
-        class="pe-2" rounded alt="" srcset=""></a>
-    <a href="https://pin.it/4OVI5Q3" target="_blank"> <img src="../../../../assets/images/pinterest.png" class="pe-2"
-        rounded alt="" srcset=""></a>
-    <a href="https://www.youtube.com/c/rudralife" target="_blank"> <img src="../../../../assets/images/youtube_icon.png"
-        class="pe-2" rounded alt="" srcset=""></a>
-  </p>
-</footer> -->
 
-<div class="d-flex flex-column h-100">
+<div class="d-flex flex-column">
 
   <!-- FOOTER -->
   <footer class="w-100 py-4 flex-shrink-0">
     <div class="container py-4">
       <div class="row gy-4 gx-5">
-        <div class="col-lg-4 col-md-6">
-          <h5 class="h1 text-white">Follow us on Social media</h5>
+        <div class="col-lg-6 col-md-6">
+          <h5 class="text-white">Visit our website to shop for Rudraksha and explore our other services :
+            <a class="text-primary" href="https://rudralife.com/" target="_blank">www.rudralife.com</a>
+          </h5>
         </div>
-        <div class="col-lg-2 col-md-6">
-          <h5 class="text-white mb-3">Quick links</h5>
-          <ul class="list-unstyled text-muted">
-            <li><a href="https://www.facebook.com/rudralife">Facebook</a></li>
-            <li><a href="https://www.instagram.com/rudraliferudraksha/">Instagram</a></li>
-            <li><a href="linkedin.com/in/rudraliferudraksha">Linkedin</a></li>
-            <li><a href="https://www.quora.com/profile/Rudralife-1">Pinterest</a></li>
-            <li><a href="https://www.youtube.com/c/rudralife">Quora</a></li>
-          </ul>
-        </div>
-        <div class="col-lg-4 col-md-6">
-          <h5 class="text-white mb-3">Newsletter</h5>
+        <div class="col-lg-6 col-md-6">
+          <h5 class="text-white">Follow us on Social media</h5>
           <p class="m-2">
             <a href="https://www.facebook.com/rudralife" target="_blank"><img
                 src="../../../../assets/images/facebook.png" class="pe-2" rounded alt="" srcset=""></a>
@@ -280,5 +332,5 @@
 
 <a href="https://api.whatsapp.com/send?
 phone=+919892956110
-&text=hello" class="float" target="_blank" id="sendMessageToWhatsapp"> 
+&text=hello" class="float" target="_blank" id="sendMessageToWhatsapp">
 </a>
