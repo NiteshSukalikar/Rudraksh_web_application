@@ -196,19 +196,22 @@ export class DashboardComponent implements OnInit {
       const result1 = [...this.numbersCount];
       //let count = this.countOccurance(result1);
       let count = _.countBy([...this.numbersCount])
-      console.log( _.keys(count).filter((item:any) => { return item > 0})[2]);
+     
       
       
 
 
       for (let i = 1; i < 10; i++) {
-        if (count[i] % 2 != 0) {
-          this.rudrakshRecommdationsData = this.RudrakshaData.filter(
-            (item: any) => {
-              return item.number == (_.keys(count).filter((item:any) => { return item > 0})[i - 1]).toString();
-            }
-          );
-          this.rudrakshaDataList.push(...this.rudrakshRecommdationsData);
+        if (count[i] != undefined) {
+          if (count[i] % 2 != 0) {
+            this.rudrakshRecommdationsData = this.RudrakshaData.filter(
+              (item: any) => {
+                console.log((_.keys(count).filter((item:any) => { return item > 0})[i - 1]).toString());
+                return item.number == (_.keys(count).filter((item:any) => { return item > 0})[i - 1]).toString();
+              }
+            );
+            this.rudrakshaDataList.push(...this.rudrakshRecommdationsData);
+          }
         }
       }
 

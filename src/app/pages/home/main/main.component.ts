@@ -2,6 +2,10 @@ import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { CommonService } from 'src/app/utilities/_services/common.service';
+import * as $ from 'jquery';
+import { init } from 'emailjs-com';
+init('user_DxTX2CUlyR3jLBCdCR7xG');
+
 @Component({
   selector: 'app-main',
   templateUrl: './main.component.html',
@@ -74,33 +78,63 @@ export class MainComponent implements OnInit {
       title: 'Ms. Shilpa Shetty',
     },
   ];
- 
-  constructor(private commonService:CommonService,private router:Router) {
-   
-  }
+
+  constructor(private commonService: CommonService, private router: Router) {}
 
   ngOnInit() {
-    this.date = this.commonService.getFormatedDate(new Date(new Date().setFullYear(new Date().getFullYear() - 5)));
-    this.init()
+    this.date = this.commonService.getFormatedDate(
+      new Date(new Date().setFullYear(new Date().getFullYear() - 5))
+    );
+    this.init();
   }
 
   init() {
     this.Form = new FormGroup({
       name: new FormControl('', [Validators.required]),
-      phone: new FormControl('', [Validators.required,Validators.pattern("^((\\+91-?)|0)?[0-9]{10}$")]),
-      email: new FormControl('', [Validators.required,Validators.email]),
+      phone: new FormControl('', [
+        Validators.required,
+        Validators.pattern('^((\\+91-?)|0)?[0-9]{10}$'),
+      ]),
+      email: new FormControl('', [Validators.required, Validators.email]),
       dob: new FormControl('', [Validators.required]),
     });
   }
 
-  onSubmit(){
+  onSubmit() {
     this.submitted = true;
     if (this.Form.invalid) {
-      return
-    }      
-    this.router.navigate(['home/dashboard'] , {queryParams:{dob:this.Form.value.dob}});
+      return;
+    }
+    this.router.navigate(['home/dashboard'], {
+      queryParams: { dob: this.Form.value.dob },
+    });
     // let element: HTMLElement = document.getElementById('sendMessageToWhatsapp') as HTMLElement;
     // element.click();
-  }
 
+    // var data = {
+    //   service_id: 'service_pd3ub26',
+    //   template_id: 'template_ac9y63v',
+    //   user_id: 'user_DxTX2CUlyR3jLBCdCR7xG',
+    //   template_params: {
+    //     subject: 'Enquiry',
+    //     name: this.Form.value.name,
+    //     from: this.Form.value.email,
+    //     contact: this.Form.value.phone,
+    //     message: 'Recommendation Message',
+    //   },
+    // };
+
+    // $.ajax('https://api.emailjs.com/api/v1.0/email/send', {
+    //   type: 'POST',
+    //   data: JSON.stringify(data),
+    //   contentType: 'application/json',
+    // })
+    //   .done(function () {
+    //     alert('Your mail is sent!');
+    //   })
+    //   .fail(function (error) {
+    //     alert('Oops... ' + JSON.stringify(error));
+    //   });
+    // this.Form.reset();
+  }
 }
