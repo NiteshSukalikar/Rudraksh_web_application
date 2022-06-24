@@ -1,0 +1,87 @@
+@import "../../assets/scss/theme/variables";
+
+
+.login-wrapper {
+    overflow-x: hidden;
+    z-index: 1;
+    height: 100%;
+}
+
+.banner_pannel_img {
+    position: relative;
+    top: -15%;
+}
+
+.rudraksh_container {
+    color: $brand;
+    // border-bottom: 3px solid #f47836;
+
+    p{
+        margin-bottom: 0;
+    }
+
+    .section_header {
+        font-size: xx-large;
+        border-bottom: 3px solid #f47836;
+    }
+
+    @media (min-width: 767px) {
+        .extra-info {
+            padding:2rem;
+        }
+    }
+}
+
+
+.pooja_container {
+    color: $brand;
+    // border-bottom: 3px solid #f47836;
+    p{
+        margin-bottom: 0;
+    }
+
+    .section_header {
+        font-size: xx-large;
+        border-bottom: 3px solid #f47836;
+    }
+
+    @media (min-width: 767px) {
+        .extra-info {
+            padding:2rem;
+        }
+    }
+
+    @media (max-width: 767px) {
+        .img_size {
+            width: 150px;
+            border-radius: 25px;
+            height: 145px;
+        }
+    }
+
+}
+
+.Testimonial_container{
+    border: 3px solid #f47836;
+    border-radius: 10px !important;
+    margin-bottom: 10px;
+}
+
+.border_left{
+    border-left: 3px solid #f47836;
+}
+
+.img_size {
+    width: 250px;
+    border-radius: 25px;
+    height: auto
+}
+
+@media (max-width: 767px) {
+    .img_size {
+        width: 140px;
+        border-radius: 25px;
+        height: auto
+    }
+}
+

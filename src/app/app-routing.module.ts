@@ -1,29 +1,35 @@
 import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
+import { Routes, RouterModule, PreloadAllModules } from '@angular/router';
 
 const appRoutes: Routes = [
   {
     path: '',
     pathMatch: 'full',
-    redirectTo: '/home/main',
+    redirectTo: '/main',
   },
   {
-    path: 'home',
+    path: 'main',
     loadChildren: () =>
-      import('./pages/home/user.module').then((m) => m.UserModule),
+      import('./main/main.module').then((m) => m.MainModule),
+  },
+  {
+    path: 'dashboard',
+    loadChildren: () =>
+      import('./dashboard/dashboard.module').then((m) => m.DashboardModule),
   },
   {
     path: '**',
-    redirectTo: '/home/main',
+    redirectTo: '/main',
   },
 ];
 
 @NgModule({
   imports: [
     RouterModule.forRoot(appRoutes, {
+      scrollPositionRestoration: 'top',
+      preloadingStrategy: PreloadAllModules,
       enableTracing: true,
       useHash: true,
-      scrollPositionRestoration: 'enabled',
     }),
   ],
   exports: [RouterModule],

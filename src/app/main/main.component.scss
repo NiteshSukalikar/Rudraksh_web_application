@@ -1,0 +1,295 @@
+@import "../../assets/scss/theme/variables";
+
+
+.login-wrapper {
+  >.container {
+    z-index: 1;
+    height: 100%;
+  }
+}
+
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+
+.bg-brand {
+  background-color: $brand;
+}
+
+
+.text_yellow {
+  color: #dcdc5d;
+}
+
+footer {
+  background: $brand;
+}
+
+.btn-primary {
+  background-color: #f47836 !important;
+  border: #f47836 !important;
+  color: white !important
+}
+
+.responsive {
+  width: 100%;
+  height: auto;
+}
+
+.image_size {
+  width: 100%;
+  height: 30%
+}
+
+.card-layout {
+  display: flex;
+  align-items: center;
+  max-height: 19rem;
+  height: 19rem !important;
+}
+
+.bg {
+  background-color: $brand  !important;
+}
+
+
+.navbar>.container,
+.navbar>.container-fluid,
+.navbar>.container-lg,
+.navbar>.container-md,
+.navbar>.container-sm,
+.navbar>.container-xl,
+.navbar>.container-xxl {
+  display: block !important;
+  flex-wrap: inherit;
+  text-align: center !important;
+}
+
+.navbar-brand {
+  margin-right: 0rem !important;
+}
+
+.highlighted_text {
+  color: #f47836;
+  font-weight: bold;
+}
+
+.client_container {
+  color: $brand;
+  border-bottom: 3px solid #f47836 !important;
+  border-radius: 10px !important;
+
+  .section_header {
+    font-size: xx-large;
+    border-bottom: 3px solid #f47836;
+  }
+
+  @media (max-width: 767px) {
+    .image_container {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  .img-thumbnail {
+    border-radius: 100% !important;
+  }
+
+}
+
+.blog_container {
+  color: $brand;
+  border-bottom: 3px solid #f47836;
+
+  .section_header {
+    font-size: xx-large;
+    border-bottom: 3px solid #f47836;
+  }
+
+  @media (max-width: 767px) {
+    .image_container {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  .img-thumbnail {
+    border-radius: 10px !important;
+  }
+
+}
+
+.aboutUs_container {
+  color: $brand;
+
+  .section_header {
+    font-size: xx-large;
+    border-left: 3px solid #f47836;
+    padding-left: 10px;
+  }
+}
+
+.mission_container {
+  color: $brand;
+
+  .section_header {
+    font-size: xx-large;
+    border-left: 3px solid #f47836;
+    padding-left: 10px;
+  }
+
+  
+
+  .overlay {
+    background-color: #0000006b;
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+  }
+
+  .hero-image {
+    background-image: url("../../assets/images/1-mission.png");
+    background-color: #cccccc;
+    height: 300px;
+    font-size: large;
+    border-radius: 12px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+
+  .hero-text {
+    position: absolute;
+    width: 90%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+  }
+}
+
+
+.vision_container {
+  color: $brand;
+
+  .section_header {
+    font-size: xx-large;
+    border-left: 3px solid #f47836;
+    padding-left: 10px;
+  }
+
+  .section_header_for_achievements {
+    font-size: x-large;
+    border-bottom: 3px solid #f47836;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+
+  .overlay {
+    background-color: #0000006b;
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+  }
+
+
+  .hero-image {
+    background-image: url("../../assets/images/2-vision.png");
+    background-color: #cccccc;
+    height: 300px;
+    border-radius: 12px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+
+  .hero-text {
+    position: absolute;
+    width: 90%;
+    font-size: large;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+  }
+}
+
+.border_left {
+  border-left: 3px solid #f47836;
+}
+
+.form-control {
+  border: 2px solid #a7a4a4 !important;
+}
+
+// :host ::ng-deep .ng-image-slider .ng-image-slider-container .main .main-inner .img-div img,
+// .ng-image-slider .ng-image-slider-container .main .main-inner .img-div video {
+//   border-radius: 100% !important;
+// }
+
+:host ::ng-deep .ng-image-slider .ng-image-slider-container .main .main-inner .img-div {
+  box-shadow: none;
+}
+
+.cards-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+
+.card {
+  margin: 0 0.5em;
+  border: none;
+  border-radius: 0;
+  width: 450px;
+  height: 450px;
+  background-color: transparent !important;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #361610;
+}
+
+.carousel-inner {
+  padding: 1em;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  background-color: #e1e1e1;
+  width: 5vh;
+  height: 5vh;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@media (min-width: 768px) {
+  .card img {
+    width: 11rem;
+    height: 11rem;
+  }
+
+  .card {
+    width: 17rem;
+    height: 17rem;
+  }
+
+  .card-body {
+    height: 8rem;
+  }
+}

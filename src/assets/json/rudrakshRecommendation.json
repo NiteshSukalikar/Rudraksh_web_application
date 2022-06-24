@@ -3,7 +3,8 @@
         "number": "1",
         "Recommendations": [
             {
-                "name": "1 Mukhi",
+                "name": "1 Mukhi", 
+                "number": "1",
                 "Deity": "Lord Shiva",
                 "Planet": "Sun",
                 "Mantra": "Om Hreem Namah",
@@ -14,6 +15,7 @@
             },
             {
                 "name": "12 Mukhi",
+                "number": "12",
                 "Deity": " Lord Aditya (Surya or the Sun)",
                 "Planet": "Sun",
                 "Mantra": "Om Krowm Kshowm Rowm Namah: Om Namah",
@@ -29,6 +31,7 @@
             },
             {
                 "name": "19 Mukhi",
+                "number": "19",
                 "Deity": "Lord Vishnu",
                 "Planet": "Sun",
                 "Mantra": "Om Hreem Hum Namah",
@@ -47,7 +50,7 @@
         "number": "2",
         "Recommendations": [
             {
-                "name": "2 Mukhi",
+                "name": "2 Mukhi", "number": "2",
                 "Deity": "Lord Ardhanareeshwar",
                 "Planet": "Moon",
                 "Mantra": "Om Namah",
@@ -58,6 +61,7 @@
             },
             {
                 "name": "GauriShankar",
+                "number": "0",
                 "Deity": "Lord Shiva and Goddess Parvati",
                 "Planet": "Moon",
                 "Mantra": "Om Gaurishankaraya Namah",
@@ -68,6 +72,7 @@
             },
             {
                 "name": "20 Mukhi",
+                "number": "20",
                 "Deity": "Lord Brahma",
                 "Planet": "Moon",
                 "Mantra": "Om Hreem Hreem Hum Hum Brahmaney Namah",
@@ -87,6 +92,7 @@
         "Recommendations": [
             {
                 "name": "5 Mukhi",
+                "number": "5",
                 "Deity": "Kalaagni Rudra",
                 "Planet": "Jupiter",
                 "Mantra": "Om Hreem Namah",
@@ -97,6 +103,7 @@
             },
             {
                 "name": "15 Mukhi",
+                "number": "15",
                 "Deity": "Lord Pashupatinath",
                 "Planet": "Jupiter",
                 "Mantra": "Om Hreem Namah",
@@ -116,6 +123,7 @@
         "Recommendations": [
             {
                 "name": "8 Mukhi",
+                "number": "8",
                 "Deity": "Lord Ganesh",
                 "Planet": "Rahu",
                 "Mantra": "Om Hum  Namah",
@@ -130,15 +138,17 @@
             },
             {
                 "name": "10 Mukhi",
+                "number": "10",
                 "Deity": "Lord Shiva",
                 "Planet": "Sun",
                 "Mantra": "Om Hreem Namah",
-                "link": "https://rudralife.com/product/one-mukhi-capping-rudraksha",
+                "link": "https://rudralife.com/product/ten-mukhi-small-rudraksha",
                 "Benefits": "For name, fame, growth, success and meditation. For ailments like blood pressure and heart health. It is said to be good for the heart and eyesight too. It is excellent for improving meditative focus which helps us in achieving success.",
                 "imagePath": "10 Mukhi.jpg"
             },
             {
                 "name": "16 Mukhi",
+                "number": "16",
                 "Deity": "Lord Ram",
                 "Planet": "Rahu",
                 "Mantra": "Om Hreem Hum  Namah",
@@ -158,6 +168,7 @@
         "Recommendations": [
             {
                 "name": "4 Mukhi",
+                "number": "4",
                 "Deity": "Brahma",
                 "Planet": "Mercury",
                 "Mantra": "Om Hreem Namah",
@@ -168,10 +179,11 @@
             },
             {
                 "name": "10 Mukhi",
+                "number": "10",
                 "Deity": "Lord Shiva",
                 "Planet": "Sun",
                 "Mantra": "Om Hreem Namah",
-                "link": "https://rudralife.com/product/one-mukhi-capping-rudraksha",
+                "link": "https://rudralife.com/product/ten-mukhi-small-rudraksha",
                 "Benefits": "For name, fame, growth, success and meditation. For ailments like blood pressure and heart health. It is said to be good for the heart and eyesight too. It is excellent for improving meditative focus which helps us in achieving success.",
                 "imagePath": "10 Mukhi.jpg"
             }
@@ -182,16 +194,18 @@
         "Recommendations": [
             {
                 "name": "6 Mukhi",
+                "number": "6",
                 "Deity": "Lord Kartikeya",
                 "Planet": "Venus",
                 "Mantra": "Om Hreem Hum Namah",
-                "link": "https://rudralife.com/product/two-mukhi-rudraksha",
+                "link": "https://rudralife.com/product/six-mukhi-rudraksha",
                 "Benefits": "Good for knowledge, wisdom, communication skills and self confidence. It is found useful in strengthening the functions of nerves and muscles. It is believed to bless the wearer with wisdom, increased intelligence, will power and a steady mind.",
                 "imagePath": "6 Mukhi.jpg",
                 "dynamicPrice" : "6 Mukhi capping  (Dynamic pricing) " 
             },
             {
                 "name": "13 Mukhi",
+                "number": "13",
                 "Deity": "Indra Dev",
                 "Planet": "Venus",
                 "Mantra": "None",
@@ -206,6 +220,7 @@
             },
             {
                 "name": "21 Mukhi",
+                "number": "21",
                 "Deity": "Lord Kuber",
                 "Planet": "Venus",
                 "Mantra": "Om Hreem Hoom Shivmitraye Namah",
@@ -225,6 +240,7 @@
         "Recommendations": [
             {
                 "name": "9 Mukhi",
+                "number": "9",
                 "Deity": "Devi Durga",
                 "Planet": "Ketu",
                 "Mantra": "Om Hreem Hum Namah",
@@ -240,6 +256,7 @@
             },
             {
                 "name": "10 Mukhi",
+                "number": "10",
                 "Deity": "Lord Vishnu",
                 "Planet": "None",
                 "Mantra": "Om Hreem Namah",
@@ -259,6 +276,7 @@
         "Recommendations": [
             {
                 "name": "7 Mukhi",
+                "number": "7",
                 "Deity": "Mahalakshmi",
                 "Planet": "Saturn",
                 "Mantra": "Om Hum Namah",
@@ -273,6 +291,7 @@
             },
             {
                 "name": "14 Mukhi.jpg",
+                "number": "14",
                 "Deity": "Lord Shiva",
                 "Planet": "Saturn",
                 "Mantra": "Om Hreem Namah",
@@ -288,6 +307,7 @@
             },
             {
                 "name": "17 Mukhi",
+                "number": "17",
                 "Deity": "Lord Vishwakarma",
                 "Planet": "Saturn",
                 "Mantra": "Om Namah Shivaya",
@@ -307,6 +327,7 @@
         "Recommendations": [
             {
                 "name": "3 Mukhi",
+                "number": "3",
                 "Deity": "Agni",
                 "Planet": "Mars",
                 "Mantra": "Om Kleem Namah",
@@ -317,6 +338,7 @@
             },
             {
                 "name": "11 Mukhi",
+                "number": "11",
                 "Deity": "Lord Hanuman",
                 "Planet": "Mars",
                 "Mantra": "Om Hreem Hum Namah",
@@ -331,15 +353,17 @@
             },
             {
                 "name": "14 Mukhi",
+                "number": "14",
                 "Deity": "Lord Shiva",
                 "Planet": "Sun",
                 "Mantra": "Om Hreem Namah",
-                "link": "https://rudralife.com/product/one-mukhi-capping-rudraksha",
+                "link": "https://rudralife.com/product/fourteen-mukhi-medium-rudraksha",
                 "Benefits": "For name, fame, growth, success and meditation. For ailments like blood pressure and heart health. It is said to be good for the heart and eyesight too. It is excellent for improving meditative focus which helps us in achieving success.",
                 "imagePath": "14 Mukhi.jpg"
             },
             {
                 "name": "18 Mukhi",
+                "number": "18",
                 "Deity": "Bhumi Devi",
                 "Planet": "Mars",
                 "Mantra": "Om Hreem Hoom Ekatvarupaye Hum Hreem Om",

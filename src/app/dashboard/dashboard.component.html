@@ -1,0 +1,286 @@
+<div class="login-wrapper d-flex flex-column flex-fill position-relative" id="top">
+  <nav class="navbar bg text-center text-white">
+    <div class="container-fluid mr-0">
+      <a class="navbar-brand" href="#">Rudraksha Recommendations</a>
+    </div>
+  </nav>
+  
+  <main class="container">
+    <div class="marketing mt-3 mission_container ">
+      <div class="pt-2 m-2">
+        <span class="section_header">Result</span>
+      </div>
+      <p class="col-md-12 fs-4 ps-2">As per the date of birth entered, these Rudraksha will be good for you as
+        per astrological charts.</p>
+      <p class="col-md-12 fs-4 ps-2"><span class="highlighted_text">Please note : </span> Wearing all Mukhi Rudraksha is a
+        divine practice. Rudraksha does not
+        have any negative effects and at Rudralife, we strive to deliver the best quality of Nepal origin beads for our
+        customers.</p>
+    </div>
+  
+  
+    <div class="marketing mt-3 rudraksh_container" *ngIf="rudrakshaDataList">
+      <div class="pt-2 m-2 text-center">
+        <span class="section_header">Rudraksha recommended</span>
+      </div>
+      <div *ngFor="let item of rudrakshaDataList">
+        <div class="row featurette rounded shadow-lg bg-body rounded" *ngFor="let itemData of item.Recommendations">
+          <div class="row d-flex mb-3">
+            <div class="col-5">
+              <img src='../../../../assets/images/rudraksh/{{itemData.imagePath}}' class="img_size p-3" alt="">
+            </div>
+            <div class="col-7">
+              <p class="featurette-heading mt-3"><b>{{itemData.name}}</b></p>
+              <p class="featurette-heading ">Presiding Deity : {{itemData.Deity}}</p>
+              <p class="featurette-heading ">Ruling Planet : {{itemData.Planet}}</p>
+              <p><a class="btn btn-primary text-white" target="_blank" href="{{itemData.link}}">SHOP NOW</a></p>
+            </div>
+          </div>
+          <div class="extra-info mb-2">
+            <p class="featurette-heading">Beej Mantra : {{itemData.Mantra}}</p>
+            <p><b>Benefits : {{itemData.Benefits}}</b></p>
+            <!-- <p class="text-primary" *ngIf="itemData.dynamicPrice">Price : {{itemData.dynamicPrice}}</p>
+            <div *ngIf="itemData.price">
+              <p class="text-primary" *ngIf="itemData.price.Small">Small : {{itemData.price.Small}}</p>
+              <p class="text-primary" *ngIf="itemData.price.Medium">Medium : {{itemData.price.Medium}}</p>
+              <p class="text-primary" *ngIf="itemData.price.Large">large : {{itemData.price.Large}}</p>
+              <p class="text-primary" *ngIf="itemData.price.Collector">Collector : {{itemData.price.Collector}}</p>
+              <p class="text-primary" *ngIf="itemData.price.SuperCollector">Super Collector :
+                {{itemData.price.SuperCollector}}</p>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="marketing mt-3 mission_container">
+      <div class="pt-2 m-2">
+        <span class="section_header">Rudralife panel experts</span>
+      </div>
+      <h5 class="col-md-12 ps-2">At Rudralife, we have a team of highly experienced panel experts who guide people on
+        the
+        best Rudraksha combinations for them.</h5>
+  
+      <div class="position-relative">
+        <img src="../../../../assets/images/empower yourself w power of rudraksha.jpg" class="banner_pannel_img rounded-3"
+          height="100%" width="100%" alt="">
+        <div class="d-flex justify-content-center mt-2 position-absolute" style="bottom: 2%;width: 100%;">
+          <a href="https://api.whatsapp.com/send?
+            phone=+919892956110
+            &text=hello" target="_blank">
+            <button class="btn btn-large btn-primary">Speak to an Expert</button></a>
+        </div>
+      </div>
+  
+    </div>
+  
+  
+    <div class="marketing mt-3 mission_container">
+      <div class="pt-2 m-2">
+        <span class="section_header">Puja Recommendations</span>
+      </div>
+      <h5 class="col-md-12 ps-2">As per the date of birth entered, these Puja's will be beneficial for you. At
+        Rudralife,
+        we conduct personalised Puja's for our customers as well as general Puja in which one can participate with their
+        Sankalp.</h5>
+    </div>
+  
+    <div class="marketing mt-3 pooja_container" *ngIf="poojaDataList">
+      <div class="row featurette rounded shadow-lg mb-3 bg-body rounded" *ngFor="let item of poojaDataList">
+        <div class="row d-flex align-items-center mt-3 mb-2">
+          <div class="col-5">
+            <img src='../../../../assets/images/pooja/{{item.imagePath}}' alt="" class="img_size p-3">
+          </div>
+          <div class="col-7">
+            <p class="featurette-heading mb-1" style="overflow-wrap: anywhere;">{{item.name}}
+            </p>       
+            <p class="text-primary">Cost: {{item.cost}}</p>
+            <p class="text-primary">No. of Pandit: {{item.pandit}}</p>
+            <!-- <p><a class="btn btn-primary text-white" target="_blank"
+                href="https://www.rudralife.com/blog/can-only-hindus-wear-rudraksha-2/">LEARN MORE</a></p> -->
+          </div>
+        </div>
+        <div class="extra-info mb-2">
+          <p class="featurette-heading">Description : {{item.description}}</p>
+        </div>  
+      </div>
+  
+  
+      <h1 *ngIf="mahaPoojaName && mahaPoojaImage && mahaPoojaName!='Not Required'" class="text-center">Maha Puja
+        Recommendations</h1>
+      <div class="marketing mt-3 pooja_container"
+        *ngIf="mahaPoojaName && mahaPoojaImage && mahaPoojaName!='Not Required' ">
+        <div class="row featurette rounded shadow-lg mb-3 bg-body rounded">
+          <div class="row d-flex align-items-center mt-3 mb-2">
+            <div class="col-5">
+              <img src='../../../../assets/images/pooja/{{mahaPoojaImage}}' alt="" class="img_size p-3">
+            </div>
+            <div class="col-7">
+              <p class="featurette-heading" style="overflow-wrap: anywhere;">{{mahaPoojaName}}</p>
+              <p class="text-primary">Cost: {{mahaPoojaCost}}</p>
+              <p class="text-primary">No. of Pandit: {{mahaPoojaPandit}}</p>
+              <!-- <p><a class="btn btn-primary text-white" target="_blank"
+                  href="https://www.rudralife.com/blog/can-only-hindus-wear-rudraksha-2/">LEARN MORE</a></p> -->
+            </div>
+            <div class="extra-info mb-2">
+              <p class="featurette-heading">Description : {{mahaPoojaDescription}}</p>             
+            </div>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  
+    <div class="marketing mt-3 mission_container ">
+      <div class="pt-2 m-2">
+        <span class="section_header">Still unsure ?</span>
+      </div>
+      <div class="position-relative">
+        <img src="../../../../assets/images/Connect with our Puja experts.jpg" class="banner_pannel_img rounded-3"
+          height="100%" width="100%" alt="">
+        <div class="d-flex justify-content-center mt-2 position-absolute" style="bottom: 2%;width: 100%;">
+          <a href="https://calendly.com/rudraliferecommendations/rudralife-recommendations?month=2022-06" target="_blank">
+            <button class="btn btn-large btn-primary">Speak to our expert</button></a>
+        </div>
+      </div>
+    </div>
+  
+    <div class="marketing mt-3 mission_container bg-light">
+      <div class="pt-2 m-2">
+        <span class="section_header">Explore on Amazon</span>
+      </div>
+      <h5 class="col-md-12 ps-2">Rudraksha products which any one can wear irrespective of date of birth are called
+        Standalone Rudraksha which are now available on our Amazon store.</h5>
+  
+      <div class="marketing mt-3 text-center">
+        <ng-image-slider [images]="imageObject" [infinite]="true" [imagePopup]="false" [autoSlide]="1"
+          (imageClick)="imageClick($event)" [showArrow]="false" [imageSize]="{width: '200', height: 200}" slideImage="1"
+          #nav></ng-image-slider>
+        <div class="d-flex justify-content-center pb-3 mt-2">
+          <a href="https://www.amazon.in/s?me=A3C62SOGIMRHS9&marketplaceID=A21TJRUUN4KGV" target="_blank">
+            <button class="btn btn-large btn-primary">Explore on Amazon Store</button></a>
+        </div>
+  
+      </div>
+    </div>
+  
+    <div class="marketing mt-3 mission_container ">
+      <div class="pt-2 m-2">
+        <span class="section_header">Customer stories</span>
+      </div>
+    </div>
+  
+  
+    <div class="marketing text-center">
+      <div class="row mt-3">
+        <div class="col-lg-4 rounded p-3 Testimonial_container">
+          <h2>Mr. Hemang R. Jivanramjiwala</h2>
+          <p class="fst-italic">"I bought one mukhi with two Six Mukhi Rudraksha last year. I experience lots of
+            improvements (Positive) in my
+            life. My surrounding changes unexpectedly in a positive manner. slow & steady I am getting mental peace &
+            happiness. I suggest everyone to have Rudraksha for desire & good health."</p>
+        </div>
+        <div class="col-lg-4 rounded p-3 Testimonial_container">
+          <h2>Mr. Nitin Kumar Misra</h2>
+          <p class="fst-italic">"Excellent Rudraksha. everytime I come to your exhibition it gives a very good feeling.
+            Rudraksha recommendation
+            given by the experts are really nice. I am really thankful to you & Rudralife team. Keep it up."</p>
+        </div>
+        <div class="col-lg-4 rounded p-3 Testimonial_container">
+          <h2>Mr. Deep Vaghela</h2>
+          <p class="fst-italic">"I am wearing Rudraksha for more than 15 years and I always buy it from Rudralife. At
+            present I have almost 30+
+            Rudraksha of different mukhis. I suggest that everyone should visit your office since you provide exact
+            suggestion which will really be helpful to everyone."</p>
+        </div>
+      </div>
+      <div class="row mt-3">
+        <div class="col-lg-4 rounded p-3 Testimonial_container">
+          <h2>Mr. Chaitanya Bhatt</h2>
+          <p class="fst-italic">"I have worn Rudraksha Of 7, 8 And 9 Mukhi. I am feeling that this is really magical
+            Rudraksha. I got
+            everything and high confidence level. This is really incredible."</p>
+        </div>
+        <div class="col-lg-4 rounded p-3 Testimonial_container">
+          <h2>Shri Baladevan</h2>
+          <p class="fst-italic">"After my accident, I had to undergo 17 operations, then after being introduced to
+            Rudraksha
+            by you, I got my
+            final recovery and good health. It happened only after wearing Siddha Mala taken from you."</p>
+        </div>
+        <div class="col-lg-4 rounded p-3 Testimonial_container">
+          <h2>Shri Khagenbhai Patel (M.D.)</h2>
+          <p class="fst-italic">"I am wearing 16m, 17m, 18m, 19m, 21m and Trijuti Rudraksha given by Tanaybhai. No words
+            can
+            describe the
+            fantastic results after wearing these powerful Rudraksha."</p>
+        </div>
+      </div>
+      <div class="row mt-3">
+        <div class="col-lg-4 rounded p-3 Testimonial_container">
+          <h2>Mr. Kushwant Singh</h2>
+          <p class="fst-italic">"After wearing the combinations suggested was helpful for heal my negativity and I was
+            feeling healing effects,
+            It has reduced considerably. Overall I am feeling more energetic to take more interest in my day to day life
+            and
+            feel comfortable."</p>
+        </div>
+        <div class="col-lg-4 rounded p-3 Testimonial_container">
+          <h2>Mr. Malathy Ganesh</h2>
+          <p class="fst-italic">"I have been wearing 'Durga Shakti Bracelet' for the past 10 years. I got lot of
+            confidence
+            and victory. I am
+            doing well in business also. I wear it every day."</p>
+        </div>
+        <div class="col-lg-4 rounded p-3 Testimonial_container">
+          <h2>Shri G.V.G. Krishnamurthy</h2>
+          <p class="fst-italic">"Rudraksha Beads procured from Rudralife are divine and powerful, I shall be happy to
+            recommend your beads to
+            others."</p>
+        </div>
+      </div>
+    </div>
+  
+    <div class="d-flex justify-content-center mt-2 mb-2 text-center">
+      <a href="https://rudralife.com/testimonials" target="_blank">
+        <button class="btn btn-large btn-primary">Explore more customer stories</button></a>
+    </div>
+  
+  </main>
+  
+  
+  <div class="d-flex flex-column">
+  
+    <!-- FOOTER -->
+    <footer class="w-100 p-4 flex-shrink-0">
+      <div class="">
+        <div class="row">
+          <div class="col-lg-6 col-md-6 border_left mb-2">
+            <h5 class="text-white">Visit our website to shop for Rudraksha and explore our other services :
+              <a class="text-primary" href="https://rudralife.com/" target="_blank">www.rudralife.com</a>
+            </h5>
+          </div>
+          <div class="col-lg-6 col-md-6 border_left">
+            <h5 class="text-white">Follow us on Social media</h5>
+            <p class="m-2">
+              <a href="https://www.facebook.com/rudralife" target="_blank"><img
+                  src="../../../../assets/images/facebook (1).png" class="pe-2" alt="" srcset=""></a>
+              <a href="https://www.instagram.com/rudraliferudraksha/" target="_blank"><img
+                  src="../../../../assets/images/instagram (1).png" class="pe-2" alt="" srcset=""></a>
+              <a href="linkedin.com/in/rudraliferudraksha" target="_blank"><img
+                  src="../../../../assets/images/linkedin (1).png" class="pe-2" alt="" srcset=""></a>
+              <a href="https://www.quora.com/profile/Rudralife-1" target="_blank"><img
+                  src="../../../../assets/images/quora (1).png" class="pe-2" alt="" srcset=""></a>
+              <a href="https://pin.it/4OVI5Q3" target="_blank"> <img src="../../../../assets/images/pinterest (1).png"
+                  class="pe-2" alt="" srcset=""></a>
+              <a href="https://www.youtube.com/c/rudralife" target="_blank"> <img
+                  src="../../../../assets/images/youtube (1).png" class="pe-2" alt="" srcset=""></a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+</div>
+
+
